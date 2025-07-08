@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Project.Migrations
 {
     /// <inheritdoc />
-    public partial class ai : Migration
+    public partial class golestan : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -236,6 +238,26 @@ namespace Project.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "roles",
+                columns: new[] { "Id", "name" },
+                values: new object[,]
+                {
+                    { 1, 0 },
+                    { 2, 2 },
+                    { 3, 1 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "users",
+                columns: new[] { "Id", "Created_at", "Email", "First_Name", "Hashed_Password", "Last_Name" },
+                values: new object[] { 1, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@example.com", "Admin", "Admin@1234", "User" });
+
+            migrationBuilder.InsertData(
+                table: "user_roles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { 1, 1 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_sections_classroom_id",
                 table: "sections",
@@ -244,8 +266,7 @@ namespace Project.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_sections_course_id",
                 table: "sections",
-                column: "course_id",
-                unique: true);
+                column: "course_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_sections_time_slot_id",

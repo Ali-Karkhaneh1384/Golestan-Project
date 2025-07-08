@@ -1,9 +1,7 @@
-using Project.Data;
+using Golestan_Project.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using System;
-
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +9,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<GolestanDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.LogoutPath = "/Account/Logout";
+});
+builder.Services.AddAuthorization(options =>
+{ 
+    options.AddPolicy("AminOnly", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("InstructorOnly", policy => policy.RequireRole("Instructor"));
+    options.AddPolicy("StudentOnly", policy => policy.RequireRole("Student"));
+});
 
 var app = builder.Build();
 
@@ -24,7 +34,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();

@@ -1,0 +1,49 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "ورود به سامانه دانشگاهی";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // استفاده از Layout
+}
+
+<div class="text-center">
+    <div class="login-container" style="margin-top: 50px; max-width: 400px; margin-left: auto; margin-right: auto;">
+        <div class="login-header">
+            <h2>ورود به سامانه دانشگاهی</h2>
+            <p class="text-muted">لطفاً ایمیل و رمز عبور خود را وارد کنید</p>
+        </div>
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="mb-3">
+                <label for="email" class="form-label">ایمیل</label>
+                <input type="email" name="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">رمز عبور</label>
+                <input type="password" name="password" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary">ورود</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .login-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+    }
+
+    .btn-primary {
+        background-color: #003087;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+        .btn-primary:hover {
+            background-color: #00205b;
+        }
+</style>
