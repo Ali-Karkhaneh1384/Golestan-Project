@@ -42,7 +42,7 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("classrooms");
+                    b.ToTable("classrooms", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.courses", b =>
@@ -74,7 +74,7 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("courses");
+                    b.ToTable("courses", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.instructors", b =>
@@ -93,7 +93,7 @@ namespace Project.Migrations
 
                     b.HasKey("instructor_id");
 
-                    b.ToTable("instructors");
+                    b.ToTable("instructors", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.roles", b =>
@@ -109,7 +109,7 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("roles");
+                    b.ToTable("roles", (string)null);
 
                     b.HasData(
                         new
@@ -160,7 +160,7 @@ namespace Project.Migrations
 
                     b.HasIndex("time_slot_id");
 
-                    b.ToTable("sections");
+                    b.ToTable("sections", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.students", b =>
@@ -181,7 +181,7 @@ namespace Project.Migrations
 
                     b.HasIndex("user_id");
 
-                    b.ToTable("students");
+                    b.ToTable("students", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.takes", b =>
@@ -200,7 +200,7 @@ namespace Project.Migrations
                     b.HasIndex("section_id")
                         .IsUnique();
 
-                    b.ToTable("takes");
+                    b.ToTable("takes", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.teach", b =>
@@ -216,7 +216,7 @@ namespace Project.Migrations
                     b.HasIndex("section_id")
                         .IsUnique();
 
-                    b.ToTable("teaches");
+                    b.ToTable("teaches", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.time_slots", b =>
@@ -239,7 +239,7 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("timeslots");
+                    b.ToTable("timeslots", (string)null);
                 });
 
             modelBuilder.Entity("Project.Models.user_roles", b =>
@@ -254,7 +254,7 @@ namespace Project.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("user_roles");
+                    b.ToTable("user_roles", (string)null);
 
                     b.HasData(
                         new
@@ -293,7 +293,7 @@ namespace Project.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("users");
+                    b.ToTable("users", (string)null);
 
                     b.HasData(
                         new

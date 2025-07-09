@@ -32,7 +32,7 @@ namespace Golestan_Project.Controllers
         public async Task<IActionResult> Login(string email , string password)
         {
             var user = await _dbContext.users.FirstOrDefaultAsync( user => user.Email == email );
-            if (user == null || !BCrypt.Net.BCrypt.Verify(password , user.Hashed_Password))
+            if (user == null || password != user.Hashed_Password)
             {
                 ModelState.AddModelError("","ایمیل یا رمز عبور اشتباه است!");
                 return View();
