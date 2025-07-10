@@ -1,10 +1,43 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Golestan_Project.Data;
+using Microsoft.AspNetCore.Mvc;
+using Project.Models;
 
 namespace Project.Controllers
 {
     public class AdminController : Controller
+
     {
+        private readonly GolestanDbContext _dbContext;
+
+        public AdminController(GolestanDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult CreateUser()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateUser([Bind("First_Name, Last_Name, Email, Hashed_Password")] users model)
+        {
+            if(ModelState.IsValid)
+            {
+                model.Created_at = DateTime.Now;
+                _dbContext.users.Add(model);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+            return RedirectToAction("Failure");
+        }
+        public IActionResult Success()
+        {
+            return View();
+        }
+        public IActionResult Failure()
         {
             return View();
         }

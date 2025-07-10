@@ -7,6 +7,7 @@ namespace Project.Models
     public class instructors
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int instructor_id {  get; set; }
         public int user_id {  get; set; }

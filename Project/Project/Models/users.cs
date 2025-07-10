@@ -6,6 +6,7 @@ namespace Project.Models
     public class users
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime Created_at {  get; set; }
         [Required(ErrorMessage ="نام نمیتواند خالی باشد")]
@@ -22,9 +23,9 @@ namespace Project.Models
         public string Hashed_Password {  get; set; }
         
 
-        public ICollection<user_roles> user_roles { get; set; }
-        public ICollection<instructors> Instructors { get; set; }
-        public ICollection<students> students { get; set; }
+        public ICollection<user_roles>? user_roles { get; set; }
+        public ICollection<instructors>? Instructors { get; set; }
+        public ICollection<students>? students { get; set; }
 
     }
 }
