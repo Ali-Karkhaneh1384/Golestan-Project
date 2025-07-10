@@ -19,8 +19,8 @@ namespace Project.Models
 
 
 
-        [ForeignKey("instructor_id")]
-        public users user { get; set; }
-        public ICollection<teach> teaches { get; set; }
+        [ForeignKey("user_id")]
+        public users? user { get; set; }
+        public ICollection<teach>? teaches { get; set; }
     }
 }

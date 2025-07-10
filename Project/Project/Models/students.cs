@@ -12,7 +12,7 @@ namespace Project.Models
         [Required(ErrorMessage ="تاریخ ثبت نام نمیتواند خالی باشد")]
         public DateTime enrollment_date { get; set; }
         [ForeignKey("user_id")]
-        public users users { get; set; }
-        public ICollection<takes> takes { get; set; }
+        public users? users { get; set; }
+        public ICollection<takes>? takes { get; set; }
     }
 }

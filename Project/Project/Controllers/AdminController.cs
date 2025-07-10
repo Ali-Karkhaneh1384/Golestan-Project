@@ -1,5 +1,6 @@
 ﻿using Golestan_Project.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Project.Models;
 
 namespace Project.Controllers
@@ -28,6 +29,49 @@ namespace Project.Controllers
             {
                 model.Created_at = DateTime.Now;
                 _dbContext.users.Add(model);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+            return RedirectToAction("Failure");
+        }
+        public IActionResult SetRoleStudent()
+        {
+            ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"{x.First_Name} {x.Last_Name} ({x.Email})"
+            });
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> SetRoleStudent([Bind("user_id")]students student)
+        {
+            student.enrollment_date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                _dbContext.students.Add(student);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+            return RedirectToAction("Failure");
+        }
+        public IActionResult SetRoleInstructor()
+        {
+            ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"{x.First_Name} {x.Last_Name} ({x.Email})"
+            });
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> SetRoleInstructor( instructors instructor)
+        {
+            instructor.hire_date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                _dbContext.instructors.Add(instructor);
+                Console.WriteLine($"instructor_id: {instructor.instructor_id}");
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
