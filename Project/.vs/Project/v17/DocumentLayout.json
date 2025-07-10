@@ -1,124 +1,124 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\migrations\\20250708181623_golestan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250708181623_golestan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\migrations\\golestandbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\golestandbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\teach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\teach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\instructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\user_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\user_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\migrations\\20250708181623_golestan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250708181623_golestan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\migrations\\golestandbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\golestandbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\teach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\teach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\instructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\instructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\setrolestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\setrolestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\setrolestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\failure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\failure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\failure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\user_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\user_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\time_slots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\time_slots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\time_slots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -129,41 +129,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250710194729_fix.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
-              "RelativeDocumentMoniker": "Project\\Migrations\\20250710194729_fix.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
-              "RelativeToolTip": "Project\\Migrations\\20250710194729_fix.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwAwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T19:47:29.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GolestanDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T19:06:57.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CreateUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\CreateUser.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\CreateUser.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAFcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -171,49 +145,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "roles.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\roles.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\roles.cs",
               "RelativeDocumentMoniker": "Project\\Models\\roles.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\roles.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\roles.cs",
               "RelativeToolTip": "Project\\Models\\roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:34.272Z"
+              "WhenOpened": "2025-06-11T10:52:34.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GolestanDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
               "RelativeDocumentMoniker": "Project\\Data\\GolestanDbContext.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
               "RelativeToolTip": "Project\\Data\\GolestanDbContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAiwDMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwDMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T10:53:27.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
               "RelativeDocumentMoniker": "Project\\appsettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
               "RelativeToolTip": "Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T10:53:43.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T10:53:43.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "teach.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\teach.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\teach.cs",
               "RelativeDocumentMoniker": "Project\\Models\\teach.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\teach.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\teach.cs",
               "RelativeToolTip": "Project\\Models\\teach.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -221,36 +195,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250708181623_golestan.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
-              "RelativeDocumentMoniker": "Project\\Migrations\\20250708181623_golestan.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
-              "RelativeToolTip": "Project\\Migrations\\20250708181623_golestan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAAuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Project\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Project\\Controllers\\AdminController.cs*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDQAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:16:23.956Z",
+              "WhenOpened": "2025-07-09T16:03:59.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250710194729_fix.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
+              "RelativeDocumentMoniker": "Project\\Migrations\\20250710194729_fix.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
+              "RelativeToolTip": "Project\\Migrations\\20250710194729_fix.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:47:29.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "user_roles.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\user_roles.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
+              "RelativeToolTip": "Project\\Models\\user_roles.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:53:09.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Project\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Project\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAuwEoAAAAQAAAAAAAAAA==",
+              "Title": "GolestanDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T16:03:59.786Z"
+              "WhenOpened": "2025-07-10T19:06:57.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "20250708181623_golestan.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
+              "RelativeDocumentMoniker": "Project\\Migrations\\20250708181623_golestan.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
+              "RelativeToolTip": "Project\\Migrations\\20250708181623_golestan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:16:23.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "instructors.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\instructors.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\instructors.cs",
               "RelativeDocumentMoniker": "Project\\Models\\instructors.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\instructors.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\instructors.cs",
               "RelativeToolTip": "Project\\Models\\instructors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +270,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SetRoleInstructor.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -270,11 +282,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "students.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\students.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
               "RelativeDocumentMoniker": "Project\\Models\\students.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\students.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
               "RelativeToolTip": "Project\\Models\\students.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,11 +294,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SetRoleStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\SetRoleStudent.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -294,11 +306,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Project\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,11 +318,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "users.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\users.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\users.cs",
               "RelativeDocumentMoniker": "Project\\Models\\users.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\users.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\users.cs",
               "RelativeToolTip": "Project\\Models\\users.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAiwB0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -318,11 +330,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -330,11 +342,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Failure.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Failure.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Failure.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\Failure.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Failure.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Failure.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\Failure.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -342,11 +354,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Project\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -354,11 +366,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Success.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Success.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\Success.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Success.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Success.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\Success.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -366,11 +378,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Program.cs",
               "RelativeToolTip": "Project\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -378,11 +390,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Project\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -390,23 +402,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "user_roles.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\user_roles.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
-              "RelativeToolTip": "Project\\Models\\user_roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:09.673Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 23,
               "Title": "Project.csproj",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Project.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Project.csproj",
               "RelativeDocumentMoniker": "Project\\Project.csproj",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Project.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Project.csproj",
               "RelativeToolTip": "Project\\Project.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -417,9 +417,9 @@
               "DocumentIndex": 22,
               "Title": "20250708180850_ai.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
-              "RelativeToolTip": "..\\..\\..\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T18:08:51.201Z"
             },
@@ -427,9 +427,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Project\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "Project\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -439,9 +439,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "time_slots.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
               "RelativeDocumentMoniker": "Project\\Models\\time_slots.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
               "RelativeToolTip": "Project\\Models\\time_slots.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -451,9 +451,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "takes.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
               "RelativeDocumentMoniker": "Project\\Models\\takes.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
               "RelativeToolTip": "Project\\Models\\takes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -463,9 +463,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "sections.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
               "RelativeDocumentMoniker": "Project\\Models\\sections.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
               "RelativeToolTip": "Project\\Models\\sections.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -475,9 +475,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "courses.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
               "RelativeDocumentMoniker": "Project\\Models\\courses.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
               "RelativeToolTip": "Project\\Models\\courses.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -487,9 +487,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "classrooms.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\classrooms.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\classrooms.cs",
               "RelativeDocumentMoniker": "Project\\Models\\classrooms.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\classrooms.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\classrooms.cs",
               "RelativeToolTip": "Project\\Models\\classrooms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -50,6 +50,7 @@ namespace Project.Controllers
             if (ModelState.IsValid)
             {
                 _dbContext.students.Add(student);
+                _dbContext.user_roles.Add(new user_roles { UserId = student.user_id, RoleId = 3 });
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
@@ -71,7 +72,7 @@ namespace Project.Controllers
             if (ModelState.IsValid)
             {
                 _dbContext.instructors.Add(instructor);
-                Console.WriteLine($"instructor_id: {instructor.instructor_id}");
+                _dbContext.user_roles.Add(new user_roles { UserId = instructor.user_id, RoleId = 2 });
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
