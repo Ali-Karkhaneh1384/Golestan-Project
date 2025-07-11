@@ -1,6 +1,7 @@
 ﻿using Golestan_Project.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Project.Models;
 
 namespace Project.Controllers
@@ -16,6 +17,11 @@ namespace Project.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.db = new
+            {
+                students = _dbContext.students.Include(s => s.users).ToList(),
+                instructors = _dbContext.instructors.Include(i => i.user).ToList()
+            };
             return View();
         }
         public IActionResult CreateUser()

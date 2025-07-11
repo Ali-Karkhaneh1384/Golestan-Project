@@ -1,2 +1,95 @@
-﻿
-<h1>hey you</h1>
+﻿@{
+    ViewData["Title"] = "داشبورد ادمین";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <div class="register-container">
+                <h2 class="text-center">لیست دانشجو ها</h2>
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>نام</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var student in ViewBag.db.students)
+                        {
+                            <tr>
+                                <td>@student.users.First_Name @student.users.Last_Name <br /> @student.users.Email</td>
+                                <td>
+                                    <form asp-action="DeleteStudent" method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@student.student_id" />
+                                        <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="register-container">
+                <h2 class="text-center">لیست اساتید</h2>
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>نام</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var instructor in ViewBag.db.instructors)
+                        {
+                            <tr>
+                                <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
+                                <td>
+                                    <form asp-action="DeleteInstructor" method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@instructor.instructor_id" />
+                                        <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .register-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .register-header h2, h2.text-center {
+        color: #003087;
+        margin-bottom: 1rem;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-danger:hover {
+            background-color: #a71d2a;
+        }
+
+    table th, table td {
+        vertical-align: middle;
+    }
+</style>
