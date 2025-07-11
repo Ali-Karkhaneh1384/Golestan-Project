@@ -84,6 +84,24 @@ namespace Project.Controllers
             }
             return RedirectToAction("Failure");
         }
+        [HttpPost]
+        public async Task<IActionResult> DeleteStudent(int StudentId)
+        {
+            var DeleteStudent = await _dbContext.students.FindAsync(StudentId);
+            if (DeleteStudent == null) return RedirectToAction("Failure");
+            _dbContext.students.Remove(DeleteStudent);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteInstructor(int InstructorId)
+        {
+            var DeleteInstructor = await _dbContext.instructors.FindAsync(InstructorId);
+            if (DeleteInstructor == null) return RedirectToAction("Failure");
+            _dbContext.instructors.Remove(DeleteInstructor);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
         public IActionResult Success()
         {
             return View();

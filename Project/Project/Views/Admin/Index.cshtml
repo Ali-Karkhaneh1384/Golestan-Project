@@ -8,12 +8,6 @@
             <div class="register-container">
                 <h2 class="text-center">لیست دانشجو ها</h2>
                 <table class="table table-striped text-center">
-                    <thead>
-                        <tr>
-                            <th>نام</th>
-                            <th>عملیات</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         @foreach (var student in ViewBag.db.students)
                         {
@@ -21,7 +15,7 @@
                                 <td>@student.users.First_Name @student.users.Last_Name <br /> @student.users.Email</td>
                                 <td>
                                     <form asp-action="DeleteStudent" method="post" style="display:inline;">
-                                        <input type="hidden" name="id" value="@student.student_id" />
+                                        <input type="hidden" name="StudentId" value="@student.student_id" />
                                         <button type="submit" class="btn btn-primary mt-4">حذف</button>
                                     </form>
                                 </td>
@@ -36,12 +30,6 @@
             <div class="register-container">
                 <h2 class="text-center">لیست اساتید</h2>
                 <table class="table table-striped text-center">
-                    <thead>
-                        <tr>
-                            <th>نام</th>
-                            <th>عملیات</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         @foreach (var instructor in ViewBag.db.instructors)
                         {
@@ -49,7 +37,7 @@
                                 <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
                                 <td>
                                     <form asp-action="DeleteInstructor" method="post" style="display:inline;">
-                                        <input type="hidden" name="id" value="@instructor.instructor_id" />
+                                        <input type="hidden" name="InstructorId" value="@instructor.instructor_id" />
                                         <button type="submit" class="btn btn-primary mt-4">حذف</button>
                                     </form>
                                 </td>
