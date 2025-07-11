@@ -21,6 +21,6 @@ namespace Project.Models
         [ForeignKey("course_id")]
         public courses course {  get; set; }
         public teach teach { get; set; }
-        public takes takes { get; set; }
+        public ICollection<takes> takes { get; set; }
     }
 }
