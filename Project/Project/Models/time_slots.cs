@@ -11,9 +11,9 @@ namespace Project.Models
         [Column(TypeName ="varchar(225)")]
         public string day { get; set; }
         [Required(ErrorMessage = "زمان شروع نمیتواند خالی باشد")]
-        public DateTime start_time { get; set; }
+        public TimeSpan start_time { get; set; }
         [Required(ErrorMessage = "زمان پایان نمیتواند خالی باشد")]
-        public DateTime end_time { get; set; }
+        public TimeSpan end_time { get; set; }
         public ICollection<sections> sections { get; set; }
     }
 }
