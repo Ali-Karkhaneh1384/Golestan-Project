@@ -17,5 +17,6 @@ namespace Project.Models
         [ForeignKey("section_id")]
         public sections sections { get; set; }
 
+
     }
 }

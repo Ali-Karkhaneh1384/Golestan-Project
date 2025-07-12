@@ -6,6 +6,7 @@ namespace Project.Models
     public class courses
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required(ErrorMessage = "عنوان نمیتواند خالی باشد")]
         [Column(TypeName = "varchar(225)")]
@@ -14,15 +15,12 @@ namespace Project.Models
         [Column(TypeName = "varchar(225)")]
         public string code {  get; set; }
         [Required(ErrorMessage = "واحد نمیتواند خالی باشد")]
-        [Column(TypeName = "varchar(225)")]
-        public string unit {  get; set; }
+        [Range(0, 4, ErrorMessage ="تعداد واحد فقط باید بین 0 تا 4 باشد")]
+        public int unit {  get; set; }
         [Required(ErrorMessage = "توضیحات نمیتواند خالی باشد")]
         [Column(TypeName = "varchar(225)")]
         public string description { get; set; }
-        [Required(ErrorMessage = "تاریخ امتحان نمیتواند خالی باشد")]
-        
-        public DateTime final_exam_date {  get; set; }
-        public sections sections { get; set; }
+        public ICollection<sections>? sections { get; set; }
 
     }
 }

@@ -7,12 +7,40 @@
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\migrations\\20250712091252_edit-last-changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250712091252_edit-last-changes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -25,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250710194729_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\sections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\instructors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\setroleinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\setrolestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\setrolestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\admin\\failure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\failure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -114,14 +126,6 @@
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\time_slots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\takes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\user\\desktop\\folders\\iust\\programing\\c#\\golestan-project\\project\\project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -143,7 +147,7 @@
               "RelativeDocumentMoniker": "Project\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs*",
               "RelativeToolTip": "Project\\Controllers\\AdminController.cs*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAA0wGQAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowDcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T16:03:59.786Z",
               "IsPinned": true,
@@ -152,33 +156,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Project\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-09T16:04:33.085Z",
+              "Title": "courses.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\courses.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
+              "RelativeToolTip": "Project\\Models\\courses.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:52:11.357Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
-              "RelativeDocumentMoniker": "Project\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
-              "RelativeToolTip": "Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T10:53:43.037Z",
+              "DocumentIndex": 2,
+              "Title": "CreateCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateCourse.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Admin\\CreateCourse.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateCourse.cshtml",
+              "RelativeToolTip": "Project\\Views\\Admin\\CreateCourse.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAGEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T21:55:21.181Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
+              "Title": "20250712091252_edit-last-changes.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250712091252_edit-last-changes.cs",
+              "RelativeDocumentMoniker": "Project\\Migrations\\20250712091252_edit-last-changes.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250712091252_edit-last-changes.cs",
+              "RelativeToolTip": "Project\\Migrations\\20250712091252_edit-last-changes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T09:12:52.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "students.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\students.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
+              "RelativeToolTip": "Project\\Models\\students.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:52:44.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "teach.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\teach.cs",
               "RelativeDocumentMoniker": "Project\\Models\\teach.cs",
@@ -186,11 +217,25 @@
               "RelativeToolTip": "Project\\Models\\teach.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:57.213Z"
+              "WhenOpened": "2025-06-11T10:52:57.213Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "SetRoleInstructor.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "RelativeToolTip": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T13:02:06.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "20250710194729_fix.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250710194729_fix.cs",
@@ -203,45 +248,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Project\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T16:04:33.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "sections.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\sections.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
+              "RelativeToolTip": "Project\\Models\\sections.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:52:40.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "takes.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\takes.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
+              "RelativeToolTip": "Project\\Models\\takes.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:52:47.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "20250711172650_fix2.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250711172650_fix2.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250711172650_fix2.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250711172650_fix2.cs",
               "RelativeToolTip": "Project\\Migrations\\20250711172650_fix2.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T17:26:51.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreateUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
-              "RelativeDocumentMoniker": "Project\\Views\\Admin\\CreateUser.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\CreateUser.cshtml",
-              "RelativeToolTip": "Project\\Views\\Admin\\CreateUser.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFcAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Project\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwC4AAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T01:34:14.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "students.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\students.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\students.cs",
-              "RelativeToolTip": "Project\\Models\\students.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:44.379Z",
+              "WhenOpened": "2025-07-10T12:35:17.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
+              "RelativeDocumentMoniker": "Project\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\appsettings.json",
+              "RelativeToolTip": "Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-11T10:53:43.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "GolestanDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
               "RelativeDocumentMoniker": "Project\\Data\\GolestanDbContext.cs",
@@ -249,11 +334,12 @@
               "RelativeToolTip": "Project\\Data\\GolestanDbContext.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAiwDMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:27.678Z"
+              "WhenOpened": "2025-06-11T10:53:27.678Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "roles.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\roles.cs",
               "RelativeDocumentMoniker": "Project\\Models\\roles.cs",
@@ -261,35 +347,25 @@
               "RelativeToolTip": "Project\\Models\\roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:34.272Z"
+              "WhenOpened": "2025-06-11T10:52:34.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "user_roles.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
               "RelativeDocumentMoniker": "Project\\Models\\user_roles.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\user_roles.cs",
               "RelativeToolTip": "Project\\Models\\user_roles.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:09.673Z"
+              "WhenOpened": "2025-06-11T10:53:09.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "sections.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\sections.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\sections.cs",
-              "RelativeToolTip": "Project\\Models\\sections.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:40.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "GolestanDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
@@ -297,11 +373,12 @@
               "RelativeToolTip": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T19:06:57.557Z"
+              "WhenOpened": "2025-07-10T19:06:57.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "20250708181623_golestan.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250708181623_golestan.cs",
@@ -309,11 +386,12 @@
               "RelativeToolTip": "Project\\Migrations\\20250708181623_golestan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:16:23.956Z"
+              "WhenOpened": "2025-07-08T18:16:23.956Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "instructors.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\instructors.cs",
               "RelativeDocumentMoniker": "Project\\Models\\instructors.cs",
@@ -321,35 +399,25 @@
               "RelativeToolTip": "Project\\Models\\instructors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:26.28Z"
+              "WhenOpened": "2025-06-11T10:52:26.28Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SetRoleInstructor.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
-              "RelativeDocumentMoniker": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleInstructor.cshtml",
-              "RelativeToolTip": "Project\\Views\\Admin\\SetRoleInstructor.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T13:02:06.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "SetRoleStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\SetRoleStudent.cshtml",
               "RelativeToolTip": "Project\\Views\\Admin\\SetRoleStudent.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T12:57:04.458Z"
+              "WhenOpened": "2025-07-10T12:57:04.458Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\AccountController.cs",
@@ -357,11 +425,12 @@
               "RelativeToolTip": "Project\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:06:48.866Z"
+              "WhenOpened": "2025-07-08T18:06:48.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "users.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\users.cs",
               "RelativeDocumentMoniker": "Project\\Models\\users.cs",
@@ -369,11 +438,12 @@
               "RelativeToolTip": "Project\\Models\\users.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAiwB0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:16.27Z"
+              "WhenOpened": "2025-06-11T10:53:16.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Failure.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Failure.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\Failure.cshtml",
@@ -381,23 +451,12 @@
               "RelativeToolTip": "Project\\Views\\Admin\\Failure.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T01:24:03.876Z"
+              "WhenOpened": "2025-07-10T01:24:03.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Project\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Project\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T12:35:17.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Success.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Admin\\Success.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Admin\\Success.cshtml",
@@ -405,35 +464,38 @@
               "RelativeToolTip": "Project\\Views\\Admin\\Success.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T01:21:45.696Z"
+              "WhenOpened": "2025-07-10T01:21:45.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Project\\Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Program.cs",
               "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:53.175Z"
+              "WhenOpened": "2025-06-11T10:53:53.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Project\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Project\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T18:07:48.109Z"
+              "WhenOpened": "2025-07-08T18:07:48.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Project.csproj",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Project.csproj",
               "RelativeDocumentMoniker": "Project\\Project.csproj",
@@ -441,11 +503,12 @@
               "RelativeToolTip": "Project\\Project.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-08T18:03:31.969Z"
+              "WhenOpened": "2025-07-08T18:03:31.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "20250708180850_ai.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Lenovo\\Desktop\\c#\\Golestan-Project\\Project\\Project\\Migrations\\20250708180850_ai.cs",
@@ -456,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Project\\Models\\ErrorViewModel.cs",
@@ -464,11 +527,12 @@
               "RelativeToolTip": "Project\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:18.888Z"
+              "WhenOpened": "2025-06-11T10:52:18.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "time_slots.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
               "RelativeDocumentMoniker": "Project\\Models\\time_slots.cs",
@@ -476,35 +540,12 @@
               "RelativeToolTip": "Project\\Models\\time_slots.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:53:04.353Z"
+              "WhenOpened": "2025-06-11T10:53:04.353Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "takes.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\takes.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\takes.cs",
-              "RelativeToolTip": "Project\\Models\\takes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:47.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "courses.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
-              "RelativeDocumentMoniker": "Project\\Models\\courses.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
-              "RelativeToolTip": "Project\\Models\\courses.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:52:11.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "classrooms.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Folders\\IUST\\Programing\\c#\\Golestan-Project\\Project\\Project\\Models\\classrooms.cs",
               "RelativeDocumentMoniker": "Project\\Models\\classrooms.cs",
@@ -512,7 +553,8 @@
               "RelativeToolTip": "Project\\Models\\classrooms.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:50:58.475Z"
+              "WhenOpened": "2025-06-11T10:50:58.475Z",
+              "EditorCaption": ""
             }
           ]
         }

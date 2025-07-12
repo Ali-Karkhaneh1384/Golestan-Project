@@ -40,6 +40,21 @@ namespace Project.Controllers
             }
             return RedirectToAction("Failure");
         }
+        public IActionResult CreateCourse()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateCourse(courses course)
+        {
+            if (ModelState.IsValid)
+            {
+                _dbContext.courses.Add(course);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+            return RedirectToAction("Failure");
+        }
         public IActionResult SetRoleStudent()
         {
             ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem

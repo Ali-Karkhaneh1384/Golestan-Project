@@ -6,12 +6,15 @@ namespace Project.Models
     public class sections
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int course_id {  get; set; }
         [Required(ErrorMessage ="نیمسال نمیتواند خالی باشد")]
         public int semester {  get; set; }
         [Required(ErrorMessage ="سال تحصیلی نمیتواند خالی باشد")]
         public int year {  get; set; }
+        [Required(ErrorMessage = "تاریخ امتحان نمیتواند خالی باشد")]
+        public DateTime final_exam_date { get; set; }
         public int classroom_id {  get; set; }
         public int time_slot_id {  get; set; }
         [ForeignKey("classroom_id")]
