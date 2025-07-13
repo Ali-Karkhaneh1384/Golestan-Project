@@ -1,6 +1,7 @@
 ﻿using Golestan_Project.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Project.Models;
 
@@ -54,6 +55,45 @@ namespace Project.Controllers
                 return RedirectToAction("Success");
             }
             return RedirectToAction("Failure");
+        }
+        public IActionResult CreateSection()
+        {
+            ViewBag.CourseList = _dbContext.courses.Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"{x.Title} ({x.code})"
+            });
+            ViewBag.ClassroomList = _dbContext.classrooms.Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"{x.building} - class: {x.room_number} ({x.capacity})"
+            });
+            ViewBag.TimeSlotList = _dbContext.timeslots.Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"{x.day} ({x.start_time - x.end_time})"
+            });
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateSection(sections section)
+        {
+            if(ModelState.IsValid)
+            {
+                _dbContext.sections.Add(section);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("CreateTeach");
+            }
+            return RedirectToAction("Failure");
+        }
+        public IActionResult CreateTeach()
+        {
+            ViewBag.InstructorList = _dbContext.instructors.Include(i => i.user).Select(x => new SelectListItem
+            {
+                Value = x.instructor_id.ToString(),
+                Text = $"{x.user.First_Name} {x.user.Last_Name} ({x.user.Email})"
+            });
+            return View();
         }
         public IActionResult SetRoleStudent()
         {
