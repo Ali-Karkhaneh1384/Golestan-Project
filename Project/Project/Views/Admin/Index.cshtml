@@ -51,6 +51,86 @@
                 </div>
             </div>
         </div>
+
+     
+        <div class="col-md-6 mb-4">
+            <div class="register-container">
+                <h2 class="text-center">لیست دروس</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>کد درس</th>
+                                <th>عنوان</th>
+                                <th>واحد</th>
+                                <th>توضیحات</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var course in ViewBag.db.courses ?? new List<courses>())
+                            {
+                                <tr>
+                                    <td>@course.code</td>
+                                    <td>@course.Title</td>
+                                    <td>@course.unit</td>
+                                    <td>@course.description</td>
+                                    <td>
+                                        <form asp-action="DeleteCourse" method="post" style="display:inline;">
+                                            <input type="hidden" name="CourseId" value="@course.Id" />
+                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="col-md-6 mb-4">
+            <div class="register-container">
+                <h2 class="text-center">لیست بخش‌ها</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>کد درس</th>
+                                <th>نیمسال</th>
+                                <th>سال</th>
+                                <th>تاریخ امتحان</th>
+                                <th>کلاس</th>
+                                <th>زمان</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sections in ViewBag.db.sections ?? new List<sections>())
+                            {
+                                <tr>
+                                    <td>@sections.course.code</td>
+                                    <td>@sections.semester</td>
+                                    <td>@sections.year</td>
+                                    <td>@sections.final_exam_date.ToString("yyyy-MM-dd")</td>
+                                    <td>@sections.classroom?.room_number</td>
+                                    <td>@sections.time_slot?.start_time.TimeOfDay - @sections.time_slot?.end_time.TimeOfDay</td>
+                                    <td>
+                                        <form asp-action="DeleteSection" method="post" style="display:inline;">
+                                            <input type="hidden" name="SectionId" value="@sections.Id" />
+                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -77,15 +157,15 @@
         transition: background-color 0.3s ease;
     }
 
-        .btn-danger:hover {
-            background-color: #a71d2a;
-        }
+    .btn-danger:hover {
+        background-color: #a71d2a;
+    }
 
     table th, table td {
         vertical-align: middle;
     }
 
     .table-scroll {
-        display: block; /* برای فعال کردن اسکرول */
+        display: block;
     }
 </style>
