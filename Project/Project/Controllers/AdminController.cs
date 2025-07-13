@@ -82,18 +82,26 @@ namespace Project.Controllers
             {
                 _dbContext.sections.Add(section);
                 await _dbContext.SaveChangesAsync();
-                return RedirectToAction("CreateTeach");
+                return RedirectToAction("CreateTeach", section);
             }
             return RedirectToAction("Failure");
         }
-        public IActionResult CreateTeach()
+        public IActionResult CreateTeach(sections sc)
         {
             ViewBag.InstructorList = _dbContext.instructors.Include(i => i.user).Select(x => new SelectListItem
             {
                 Value = x.instructor_id.ToString(),
                 Text = $"{x.user.First_Name} {x.user.Last_Name} ({x.user.Email})"
             });
+            ViewBag.SectionID = sc.Id;
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateTeach(SendSectionId model)
+        {
+            _dbContext.teaches.Add(new teach { instructor_id =  model.InstructorId , section_id = model.SectionId});
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("Success");
         }
         public IActionResult SetRoleStudent()
         {
