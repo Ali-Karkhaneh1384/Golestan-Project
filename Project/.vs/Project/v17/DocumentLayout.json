@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250712200235_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\Migrations\\20250712200235_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\data\\golestandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250712200235_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\Migrations\\20250712200235_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\time_slots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\migrations\\20250708181623_golestan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|solutionrelative:project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FFB132-6D5C-483B-9F3F-72A5E7E85FA1}|Project\\Project.csproj|c:\\users\\lenovo\\desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\golestan-project\\project\\project\\models\\classrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,24 +141,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Project\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAMwCUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAqwH4AAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T16:03:59.786Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "courses.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\courses.cs",
               "RelativeDocumentMoniker": "Project\\Models\\courses.cs",
@@ -184,20 +185,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "20250712200235_fix3.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250712200235_fix3.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250712200235_fix3.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250712200235_fix3.cs",
               "RelativeToolTip": "Project\\Migrations\\20250712200235_fix3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T20:02:36.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "20250712091252_edit-last-changes.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250712091252_edit-last-changes.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250712091252_edit-last-changes.cs",
@@ -210,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\appsettings.json",
               "RelativeDocumentMoniker": "Project\\appsettings.json",
@@ -229,7 +230,7 @@
               "RelativeDocumentMoniker": "Project\\Data\\GolestanDbContext.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Data\\GolestanDbContext.cs",
               "RelativeToolTip": "Project\\Data\\GolestanDbContext.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T10:53:27.678Z",
               "EditorCaption": ""
@@ -237,6 +238,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Project\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwE8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T16:04:33.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "time_slots.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Models\\time_slots.cs",
               "RelativeDocumentMoniker": "Project\\Models\\time_slots.cs",
@@ -249,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GolestanDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\GolestanDbContextModelSnapshot.cs",
@@ -262,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "20250710194729_fix.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250710194729_fix.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250710194729_fix.cs",
@@ -275,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "20250708181623_golestan.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Migrations\\20250708181623_golestan.cs",
               "RelativeDocumentMoniker": "Project\\Migrations\\20250708181623_golestan.cs",
@@ -285,18 +299,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T18:16:23.956Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\\u0628\u0631\u0646\u0627\u0645\u0647 \u0646\u0648\u06CC\u0633\u06CC\\Golestan-Project\\Project\\Project\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Project\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAuwFoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-09T16:04:33.085Z"
             },
             {
               "$type": "Document",

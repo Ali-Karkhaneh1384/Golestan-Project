@@ -99,11 +99,21 @@ namespace Project.Controllers
             }
             return RedirectToAction("Failure");
         }
+       
         [HttpPost]
         public async Task<IActionResult> DeleteStudent(int StudentId)
         {
             var DeleteStudent = await _dbContext.students.FindAsync(StudentId);
             if (DeleteStudent == null) return RedirectToAction("Failure");
+
+          
+            var userRole = await _dbContext.user_roles.FirstOrDefaultAsync(ur => ur.UserId == DeleteStudent.user_id && ur.RoleId == 3);
+            if (userRole != null)
+            {
+                _dbContext.user_roles.Remove(userRole);
+            }
+
+           
             _dbContext.students.Remove(DeleteStudent);
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -113,6 +123,15 @@ namespace Project.Controllers
         {
             var DeleteInstructor = await _dbContext.instructors.FindAsync(InstructorId);
             if (DeleteInstructor == null) return RedirectToAction("Failure");
+
+            var userRole = await _dbContext.user_roles.FirstOrDefaultAsync(ur => ur.UserId == DeleteInstructor.user_id && ur.RoleId == 2);
+            if (userRole != null)
+            {
+                _dbContext.user_roles.Remove(userRole);
+            }
+
+
+
             _dbContext.instructors.Remove(DeleteInstructor);
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
