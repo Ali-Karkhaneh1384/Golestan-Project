@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project.Models
@@ -16,14 +17,14 @@ namespace Project.Models
         [Required(ErrorMessage = "تاریخ امتحان نمیتواند خالی باشد")]
         public DateTime final_exam_date { get; set; }
         public int classroom_id {  get; set; }
-        public int time_slot_id {  get; set; }
+        [NotMapped]
+        public List<int> TimeSlotIds { get; set; } = new List<int>();
         [ForeignKey("classroom_id")]
-        public classrooms classroom { get; set; }
-        [ForeignKey("time_slot_id")]
-        public time_slots time_slot { get; set; }
+        public classrooms? classroom { get; set; }
+        public ICollection<section_time>? section_Times { get; set; }
         [ForeignKey("course_id")]
-        public courses course {  get; set; }
-        public teach teach { get; set; }
-        public ICollection<takes> takes { get; set; }
+        public courses? course {  get; set; }
+        public teach? teach { get; set; }
+        public ICollection<takes>? takes { get; set; }
     }
 }

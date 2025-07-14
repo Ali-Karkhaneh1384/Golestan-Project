@@ -26,7 +26,6 @@ namespace Project.Controllers
                 sections = _dbContext.sections
                     .Include(s => s.course)
                     .Include(s => s.classroom)
-                    .Include(s => s.time_slot)
                     .ToList()
             };
             return View();
@@ -62,16 +61,6 @@ namespace Project.Controllers
             }
             return RedirectToAction("Failure");
         }
-        [HttpPost]
-        public async Task<IActionResult> DeleteCourse(int CourseId)
-        {
-            var deletedCourse = await _dbContext.courses.FindAsync(CourseId);
-            if (deletedCourse == null) return RedirectToAction("Failure");
-
-            _dbContext.courses.Remove(deletedCourse);
-            await _dbContext.SaveChangesAsync();
-            return RedirectToAction("Index");
-        }
         public IActionResult CreateSection()
         {
             ViewBag.CourseList = _dbContext.courses.Select(x => new SelectListItem
@@ -87,7 +76,7 @@ namespace Project.Controllers
             ViewBag.TimeSlotList = _dbContext.timeslots.Select(x => new SelectListItem
             {
                 Value = x.Id.ToString(),
-                Text = $"{x.day} ({x.start_time - x.end_time})"
+                Text = $"{x.day} ({x.start_time.ToString(@"hh\:mm")} - {x.end_time.ToString(@"hh\:mm")})"
             });
             return View();
         }
@@ -98,19 +87,14 @@ namespace Project.Controllers
             {
                 _dbContext.sections.Add(section);
                 await _dbContext.SaveChangesAsync();
+                foreach(var x in section.TimeSlotIds)
+                {
+                    _dbContext.section_Times.Add(new section_time() { time_slot_id = x, section_id = section.Id });
+                }
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction("CreateTeach", section);
             }
             return RedirectToAction("Failure");
-        }
-        public async Task<IActionResult> DeleteSection(int sectionId)
-        {
-            var deletedSection = await _dbContext.sections.FindAsync(sectionId);
-            if (deletedSection != null) return RedirectToAction("Failure");
-
-            _dbContext.sections.Remove(deletedSection);
-            await _dbContext.SaveChangesAsync();
-            return RedirectToAction("Index");
-            
         }
         public IActionResult CreateTeach(sections sc)
         {
@@ -173,7 +157,27 @@ namespace Project.Controllers
             }
             return RedirectToAction("Failure");
         }
-       
+        [HttpPost]
+        public async Task<IActionResult> DeleteCourse(int CourseId)
+        {
+            var deletedCourse = await _dbContext.courses.FindAsync(CourseId);
+            if (deletedCourse == null) return RedirectToAction("Failure");
+
+            _dbContext.courses.Remove(deletedCourse);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteSection(int sectionId)
+        {
+            var deletedSection = await _dbContext.sections.FindAsync(sectionId);
+            if (deletedSection != null) return RedirectToAction("Failure");
+
+            _dbContext.sections.Remove(deletedSection);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("Index");
+
+        }
         [HttpPost]
         public async Task<IActionResult> DeleteStudent(int StudentId)
         {

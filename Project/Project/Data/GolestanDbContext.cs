@@ -18,6 +18,7 @@ namespace Golestan_Project.Data
         public DbSet<time_slots> timeslots { get; set; }
         public DbSet<students> students { get; set; }
         public DbSet<takes> takes { get; set; }
+        public DbSet<section_time> section_Times { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<user_roles>()
@@ -58,15 +59,15 @@ namespace Golestan_Project.Data
                 new user_roles { UserId = 1, RoleId = 1 } 
             );
             modelBuilder.Entity<time_slots>().HasData(
-                new time_slots { Id = 1, day = "Saturday", start_time = new TimeSpan(8, 0, 0), end_time = new TimeSpan(10, 0, 0) },
-                new time_slots { Id = 2, day = "Saturday", start_time = new TimeSpan(10, 0, 0), end_time = new TimeSpan(12, 0, 0) },
-                new time_slots { Id = 3, day = "Saturday", start_time = new TimeSpan(14, 0, 0), end_time = new TimeSpan(16, 0, 0) },
-                new time_slots { Id = 4, day = "Sunday", start_time = new TimeSpan(8, 0, 0), end_time = new TimeSpan(10, 0, 0) },
-                new time_slots { Id = 5, day = "Sunday", start_time = new TimeSpan(10, 0, 0), end_time = new TimeSpan(12, 0, 0) },
-                new time_slots { Id = 6, day = "Sunday", start_time = new TimeSpan(14, 0, 0), end_time = new TimeSpan(16, 0, 0) },
-                new time_slots { Id = 7, day = "Monday", start_time = new TimeSpan(8, 0, 0), end_time = new TimeSpan(10, 0, 0) },
-                new time_slots { Id = 8, day = "Monday", start_time = new TimeSpan(10, 0, 0), end_time = new TimeSpan(12, 0, 0) },
-                new time_slots { Id = 9, day = "Monday", start_time = new TimeSpan(14, 0, 0), end_time = new TimeSpan(16, 0, 0) }
+                new time_slots { Id = 1, day = "Saturday", start_time = new DateTime(1, 1, 1, 8, 0, 0), end_time = new DateTime(1, 1, 1,10,0 ,0) },
+                new time_slots { Id = 2, day = "Saturday", start_time = new DateTime(1, 1, 1, 10,0, 0), end_time = new DateTime(1, 1, 1,12,0 ,0) },
+                new time_slots { Id = 3, day = "Saturday", start_time = new DateTime(1, 1, 1, 12,0, 0), end_time = new DateTime(1, 1, 1,14,0 ,0) },
+                new time_slots { Id = 4, day = "Sunday", start_time = new DateTime(1, 1, 1,8 ,0 ,0), end_time = new DateTime(1, 1, 1,10,0 ,0 ,0) },
+                new time_slots { Id = 5, day = "Sunday", start_time = new DateTime(1, 1, 1,10,0 ,0), end_time = new DateTime(1, 1, 1,12,0 ,0 ,0) },
+                new time_slots { Id = 6, day = "Sunday", start_time = new DateTime(1, 1, 1,12,0 ,0), end_time = new DateTime(1, 1, 1,14,0 ,0 ,0) },
+                new time_slots { Id = 7, day = "Monday", start_time = new DateTime(1, 1, 1,8 ,0 ,0), end_time = new DateTime(1, 1, 1,10,0 ,0 ,0) },
+                new time_slots { Id = 8, day = "Monday", start_time = new DateTime(1, 1, 1,10,0 ,0), end_time = new DateTime(1, 1, 1,12,0 ,0 ,0) },
+                new time_slots { Id = 9, day = "Monday", start_time = new DateTime(1, 1, 1,12,0 ,0), end_time = new DateTime(1, 1, 1,14,0 ,0 ,0) }
             );
             modelBuilder.Entity<classrooms>().HasData(
                 new classrooms { Id = 1 , building ="computer" , room_number = 101 , capacity = 25},

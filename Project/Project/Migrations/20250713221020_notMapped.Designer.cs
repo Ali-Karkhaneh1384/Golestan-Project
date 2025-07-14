@@ -4,6 +4,7 @@ using Golestan_Project.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Project.Migrations
 {
     [DbContext(typeof(GolestanDbContext))]
-    partial class GolestanDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250713221020_notMapped")]
+    partial class notMapped
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -175,9 +178,17 @@ namespace Project.Migrations
                     b.Property<int>("time_slot_id")
                         .HasColumnType("int");
 
+                    b.Property<int?>("sectionsId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("time_slotsId")
+                        .HasColumnType("int");
+
                     b.HasKey("section_id", "time_slot_id");
 
-                    b.HasIndex("time_slot_id");
+                    b.HasIndex("sectionsId");
+
+                    b.HasIndex("time_slotsId");
 
                     b.ToTable("section_Times");
                 });
@@ -435,21 +446,13 @@ namespace Project.Migrations
 
             modelBuilder.Entity("Project.Models.section_time", b =>
                 {
-                    b.HasOne("Project.Models.sections", "section")
+                    b.HasOne("Project.Models.sections", null)
                         .WithMany("section_Times")
-                        .HasForeignKey("section_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("sectionsId");
 
-                    b.HasOne("Project.Models.time_slots", "time_slot")
+                    b.HasOne("Project.Models.time_slots", null)
                         .WithMany("section_Times")
-                        .HasForeignKey("time_slot_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("section");
-
-                    b.Navigation("time_slot");
+                        .HasForeignKey("time_slotsId");
                 });
 
             modelBuilder.Entity("Project.Models.sections", b =>

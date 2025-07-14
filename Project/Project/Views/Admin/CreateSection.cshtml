@@ -28,8 +28,10 @@
             </div>
             <div class="form-group">
                 <div class="form-group" style="direction: rtl; text-align: right;">
-                    <label for="time_slot_id">زمان</label>
-                    <select asp-for="time_slot_id" asp-items="ViewBag.TimeSlotList" class="form-control"></select>
+                    <label for="time_slot_id">زمان‌بندی</label>
+                    <select asp-for="TimeSlotIds" asp-items="ViewBag.TimeSlotList" class="form-control" multiple="multiple">
+                    </select>
+                    <span asp-validation-for="TimeSlotIds" class="text-danger"></span>
                 </div>
             </div>
 
