@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Project.Migrations
 {
     /// <inheritdoc />
-    public partial class section_timeDateTime : Migration
+    public partial class fix4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,6 +17,10 @@ namespace Project.Migrations
 
             migrationBuilder.DropIndex(
                 name: "IX_sections_time_slot_id",
+                table: "sections");
+
+            migrationBuilder.DropColumn(
+                name: "time_slot_id",
                 table: "sections");
 
             migrationBuilder.AlterColumn<DateTime>(
@@ -40,23 +44,23 @@ namespace Project.Migrations
                 columns: table => new
                 {
                     section_id = table.Column<int>(type: "int", nullable: false),
-                    time_slot_id = table.Column<int>(type: "int", nullable: false),
-                    sectionsId = table.Column<int>(type: "int", nullable: true),
-                    time_slotsId = table.Column<int>(type: "int", nullable: true)
+                    time_slot_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_section_Times", x => new { x.section_id, x.time_slot_id });
                     table.ForeignKey(
-                        name: "FK_section_Times_sections_sectionsId",
-                        column: x => x.sectionsId,
+                        name: "FK_section_Times_sections_section_id",
+                        column: x => x.section_id,
                         principalTable: "sections",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_section_Times_timeslots_time_slotsId",
-                        column: x => x.time_slotsId,
+                        name: "FK_section_Times_timeslots_time_slot_id",
+                        column: x => x.time_slot_id,
                         principalTable: "timeslots",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.UpdateData(
@@ -123,14 +127,9 @@ namespace Project.Migrations
                 values: new object[] { new DateTime(1, 1, 1, 14, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.CreateIndex(
-                name: "IX_section_Times_sectionsId",
+                name: "IX_section_Times_time_slot_id",
                 table: "section_Times",
-                column: "sectionsId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_section_Times_time_slotsId",
-                table: "section_Times",
-                column: "time_slotsId");
+                column: "time_slot_id");
         }
 
         /// <inheritdoc />
@@ -154,6 +153,13 @@ namespace Project.Migrations
                 nullable: false,
                 oldClrType: typeof(DateTime),
                 oldType: "datetime2");
+
+            migrationBuilder.AddColumn<int>(
+                name: "time_slot_id",
+                table: "sections",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.UpdateData(
                 table: "timeslots",

@@ -16,10 +16,15 @@
                                 <tr>
                                     <td>@student.users.First_Name @student.users.Last_Name <br /> @student.users.Email</td>
                                     <td>
+                                        <form asp-action="ShowStudentDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="studentId" value="@student.student_id" /> 
+                                            <button type="submit" style="background-color:olivedrab" class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
                                         <form asp-action="DeleteStudent" method="post" style="display:inline;">
                                             <input type="hidden" name="StudentId" value="@student.student_id" />
                                             <button type="submit" class="btn btn-primary mt-4">حذف</button>
                                         </form>
+                                        
                                     </td>
                                 </tr>
                             }
@@ -159,6 +164,7 @@
     .btn-danger:hover {
         background-color: #a71d2a;
     }
+    
 
     table th, table td {
         vertical-align: middle;

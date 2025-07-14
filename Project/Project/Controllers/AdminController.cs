@@ -1,4 +1,5 @@
 ﻿using Golestan_Project.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
@@ -29,6 +30,24 @@ namespace Project.Controllers
                     .ToList()
             };
             return View();
+        }
+        public IActionResult ShowStudentDetails(int studentId)
+        {
+            var student = _dbContext.students
+                    .Include(s => s.users) 
+                    .Include(s => s.takes)
+                    .ThenInclude(t => t.sections)
+                    .ThenInclude(s => s.course)
+                    .ThenInclude(c => c.sections)
+                    .ThenInclude(s => s.teach)
+                    .ThenInclude(t => t.instructor)
+                    .ThenInclude(i => i.user)
+                    .FirstOrDefault(s => s.student_id == studentId);
+            if (student == null)
+            {
+                return NotFound("دانشجو یافت نشد");
+            }
+            return View(student);
         }
         public IActionResult CreateUser()
         {
@@ -113,6 +132,66 @@ namespace Project.Controllers
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Success");
         }
+        public IActionResult AddStudentToSection()
+        {
+            ViewBag.students = _dbContext.students.Select(s => new SelectListItem
+            {
+                Value = s.student_id.ToString(),
+                Text = $"{s.users.First_Name} {s.users.Last_Name} ({s.users.Email})"
+            }).ToList();
+
+            ViewBag.sections = _dbContext.sections.Select(s => new SelectListItem
+            {
+                Value = s.Id.ToString(),
+                Text = $"{s.course.Title} -  نیمسال {s.semester}"
+            }).ToList();
+
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddStudentToSection([Bind("student_id, section_id, grade")] takes model)
+        {
+         
+            ModelState.Remove("students");
+            ModelState.Remove("sections");
+
+            if (ModelState.IsValid)
+            {
+               
+                if (await _dbContext.takes.AnyAsync(t => t.student_id == model.student_id && t.section_id == model.section_id))
+                {
+                    ModelState.AddModelError("", "این دانشجو قبلاً در این بخش ثبت‌نام کرده است.");
+                    return View(model);
+                }
+
+                _dbContext.takes.Add(model);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+
+            return RedirectToAction("Failure");
+        }
+        [HttpPost]
+        public IActionResult DeleteStudentFromSection(int studentId, int sectionId)
+        {
+            var student = _dbContext.students
+                .Include(s => s.takes)
+                .FirstOrDefault(s => s.student_id == studentId);
+
+            if (student == null)
+            {
+                return NotFound("دانش‌آموز یافت نشد.");
+            }
+
+            var takeToRemove = student.takes.FirstOrDefault(t => t.section_id == sectionId);
+            if (takeToRemove != null)
+            {
+                _dbContext.takes.Remove(takeToRemove);
+                _dbContext.SaveChanges();
+            }
+
+            return RedirectToAction("ShowStudentDetails", new { studentId = studentId });
+        }
         public IActionResult SetRoleStudent()
         {
             ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem
@@ -171,7 +250,7 @@ namespace Project.Controllers
         public async Task<IActionResult> DeleteSection(int sectionId)
         {
             var deletedSection = await _dbContext.sections.FindAsync(sectionId);
-            if (deletedSection != null) return RedirectToAction("Failure");
+            if (deletedSection == null) return RedirectToAction("Failure");
 
             _dbContext.sections.Remove(deletedSection);
             await _dbContext.SaveChangesAsync();

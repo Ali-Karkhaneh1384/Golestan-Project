@@ -17,73 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project
 build_property.RootNamespace = Project
-build_property.ProjectDir = C:\Users\user\Desktop\Folders\IUST\Programing\c#\Golestan-Project\Project\Project\
+build_property.ProjectDir = C:\Users\Lenovo\Desktop\admin\Golestan-Project\Project\Project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Folders\IUST\Programing\c#\Golestan-Project\Project\Project
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\admin\Golestan-Project\Project\Project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Account/Login.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/CreateCourse.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/AddStudentToSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkU3R1ZGVudFRvU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/CreateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlQ291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/CreateSection.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/CreateSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlU2VjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/CreateTeach.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/CreateTeach.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVGVhY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/CreateUser.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/Failure.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/Failure.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmFpbHVyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/Index.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/SetRoleInstructor.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/SetRoleInstructor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0Um9sZUluc3RydWN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/SetRoleStudent.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/SetRoleStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0Um9sZVN0dWRlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Admin/Success.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/ShowStudentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd1N0dWRlbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Admin/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Shared/Error.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/_ViewImports.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/_ViewStart.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/Folders/IUST/Programing/c\#/Golestan-Project/Project/Project/Views/Shared/_Layout.cshtml]
+[C:/Users/Lenovo/Desktop/admin/Golestan-Project/Project/Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9q8ibpt6yd

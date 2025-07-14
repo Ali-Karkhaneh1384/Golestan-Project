@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Project.Migrations
 {
     [DbContext(typeof(GolestanDbContext))]
-    [Migration("20250713210815_section_time-DateTime")]
-    partial class section_timeDateTime
+    [Migration("20250714093546_fix4")]
+    partial class fix4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -178,17 +178,9 @@ namespace Project.Migrations
                     b.Property<int>("time_slot_id")
                         .HasColumnType("int");
 
-                    b.Property<int?>("sectionsId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("time_slotsId")
-                        .HasColumnType("int");
-
                     b.HasKey("section_id", "time_slot_id");
 
-                    b.HasIndex("sectionsId");
-
-                    b.HasIndex("time_slotsId");
+                    b.HasIndex("time_slot_id");
 
                     b.ToTable("section_Times");
                 });
@@ -211,9 +203,6 @@ namespace Project.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("semester")
-                        .HasColumnType("int");
-
-                    b.Property<int>("time_slot_id")
                         .HasColumnType("int");
 
                     b.Property<int>("year")
@@ -449,13 +438,21 @@ namespace Project.Migrations
 
             modelBuilder.Entity("Project.Models.section_time", b =>
                 {
-                    b.HasOne("Project.Models.sections", null)
+                    b.HasOne("Project.Models.sections", "section")
                         .WithMany("section_Times")
-                        .HasForeignKey("sectionsId");
+                        .HasForeignKey("section_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Project.Models.time_slots", null)
+                    b.HasOne("Project.Models.time_slots", "time_slot")
                         .WithMany("section_Times")
-                        .HasForeignKey("time_slotsId");
+                        .HasForeignKey("time_slot_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("section");
+
+                    b.Navigation("time_slot");
                 });
 
             modelBuilder.Entity("Project.Models.sections", b =>
@@ -571,8 +568,7 @@ namespace Project.Migrations
 
                     b.Navigation("takes");
 
-                    b.Navigation("teach")
-                        .IsRequired();
+                    b.Navigation("teach");
                 });
 
             modelBuilder.Entity("Project.Models.students", b =>

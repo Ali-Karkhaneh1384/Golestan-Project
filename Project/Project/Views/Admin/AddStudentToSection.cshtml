@@ -1,0 +1,98 @@
+﻿@model Project.Models.takes
+
+@{
+    ViewData["Title"] = "ثبت‌نام دانشجو در درس";
+}
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow-sm border-0" style="max-width: 500px; width: 100%;">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="mb-0">ثبت‌نام دانشجو در درس</h2>
+        </div>
+        <div class="card-body p-4">
+            <form asp-action="AddStudentToSection" method="post" class="needs-validation" novalidate>
+                <div asp-validation-summary="All" class="text-danger text-center mb-3"></div>
+
+                <div class="row g-3">
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label asp-for="student_id" class="form-label fw-bold text-secondary">دانشجو</label>
+                            <select asp-for="student_id" asp-items="ViewBag.Students" class="form-select form-select-lg" required>
+                                <option value="">انتخاب دانشجو</option>
+                            </select>
+                            <span asp-validation-for="student_id" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                  
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label asp-for="section_id" class="form-label fw-bold text-secondary">بخش</label>
+                            <select asp-for="section_id" asp-items="ViewBag.Sections" class="form-select form-select-lg" required>
+                                <option value="">انتخاب کلاس</option>
+                            </select>
+                            <span asp-validation-for="section_id" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                  
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label asp-for="grade" class="form-label fw-bold text-secondary">نمره</label>
+                            <input asp-for="grade" class="form-control form-control-lg" value="0" type="number" min="0" max="20" step="1" required />
+                            <span asp-validation-for="grade" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-4">ثبت‌نام</button>
+                    <a asp-action="Index" class="btn btn-secondary btn-lg ms-2 px-4">بازگشت</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
+
+<style>
+    .card {
+        border-radius: 15px;
+    }
+
+    .form-select, .form-control {
+        border-color: #ced4da;
+        border-radius: 10px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-select:focus, .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+    .btn-lg {
+        border-radius: 10px;
+    }
+
+    .text-secondary {
+        color: #6c757d !important;
+    }
+</style>
