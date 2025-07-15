@@ -1,4 +1,8 @@
-.vs
+.vs/
 *.suo
-appsettings.json
+bin/
+obj/
 *.dll
+*.exe
+*.pdb
+appsettings.json
