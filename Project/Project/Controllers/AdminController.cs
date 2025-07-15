@@ -49,6 +49,22 @@ namespace Project.Controllers
             }
             return View(student);
         }
+        public IActionResult ShowInstructorDetails(int instructorId)
+        {
+            var instructor = _dbContext.instructors
+                        .Include(x => x.user)
+                        .Include(x => x.teaches)
+                        .ThenInclude(x => x.section)
+                        .ThenInclude(x => x.course)
+                        .ThenInclude(x => x.sections)
+                        .ThenInclude(x => x.classroom)
+                        .FirstOrDefault(x => x.instructor_id == instructorId);
+            if (instructor == null)
+            {
+                return NotFound("استاد یافت نشد");
+            }
+            return View(instructor);
+        }
         public IActionResult CreateUser()
         {
             return View();
@@ -219,6 +235,20 @@ namespace Project.Controllers
             }
 
             return RedirectToAction("ShowStudentDetails", new { studentId = studentId });
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteInstructorFromSection(int instructorId, int sectionId)
+        {
+            var instructor = await _dbContext.instructors
+                .Include(x => x.teaches).FirstOrDefaultAsync(x => x.instructor_id == instructorId);
+            if (instructor == null) return NotFound("استاد یافت نشد.");
+            var teachToRemove = instructor.teaches.FirstOrDefault(x => x.section_id == sectionId);
+            if (teachToRemove != null)
+            {
+                _dbContext.teaches.Remove(teachToRemove);
+                await _dbContext.SaveChangesAsync();
+            }
+            return RedirectToAction("ShowInstructorDetails", new { instructorId = instructorId });
         }
         public IActionResult SetRoleStudent()
         {

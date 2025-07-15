@@ -45,6 +45,10 @@
                                 <tr>
                                     <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
                                     <td>
+                                        <form asp-action="ShowInstructorDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="instructorId" value="@instructor.instructor_id" />
+                                            <button type="submit" style="background-color:olivedrab" class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
                                         <form asp-action="DeleteInstructor" method="post" style="display:inline;">
                                             <input type="hidden" name="InstructorId" value="@instructor.instructor_id" />
                                             <button type="submit" class="btn btn-primary mt-4">حذف</button>
