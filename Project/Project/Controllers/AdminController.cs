@@ -51,7 +51,7 @@ namespace Project.Controllers
             }
             return View(student);
         }
-<<<<<<< HEAD
+
         public IActionResult ShowSectionDetails(int sectionId)
         {
             var section = _dbContext.sections
@@ -77,7 +77,8 @@ namespace Project.Controllers
             }
 
             return View(section);
-=======
+        }
+
         public IActionResult ShowInstructorDetails(int instructorId)
         {
             var instructor = _dbContext.instructors
@@ -93,7 +94,7 @@ namespace Project.Controllers
                 return NotFound("استاد یافت نشد");
             }
             return View(instructor);
->>>>>>> d72d20ded66c70883e712b3ca0284401a9aa0708
+
         }
         public IActionResult CreateUser()
         {
@@ -267,7 +268,7 @@ namespace Project.Controllers
             return RedirectToAction("ShowStudentDetails", new { studentId = studentId });
         }
         [HttpPost]
-<<<<<<< HEAD
+
         public IActionResult DeleteStudentFromSection(int studentId, int sectionId)
         {
             var student = _dbContext.students
@@ -288,9 +289,8 @@ namespace Project.Controllers
 
             return RedirectToAction("ShowSectionDetails", new { sectionId = sectionId });
         }
-        
-=======
-        public async Task<IActionResult> DeleteInstructorFromSection(int instructorId, int sectionId)
+        [HttpPost]
+        public async Task<IActionResult> DeleteSectionFromInstructor(int instructorId, int sectionId)
         {
             var instructor = await _dbContext.instructors
                 .Include(x => x.teaches).FirstOrDefaultAsync(x => x.instructor_id == instructorId);
@@ -303,7 +303,21 @@ namespace Project.Controllers
             }
             return RedirectToAction("ShowInstructorDetails", new { instructorId = instructorId });
         }
->>>>>>> d72d20ded66c70883e712b3ca0284401a9aa0708
+        [HttpPost]
+        public async Task<IActionResult> DeleteInstructorFromSection(int instructorId, int sectionId)
+        {
+            var instructor = await _dbContext.instructors
+                .Include(x => x.teaches).FirstOrDefaultAsync(x => x.instructor_id == instructorId);
+            if (instructor == null) return NotFound("استاد یافت نشد.");
+            var teachToRemove = instructor.teaches.FirstOrDefault(x => x.section_id == sectionId);
+            if (teachToRemove != null)
+            {
+                _dbContext.teaches.Remove(teachToRemove);
+                await _dbContext.SaveChangesAsync();
+            }
+            return RedirectToAction("ShowSectionDetails", new { sectionId = sectionId });
+        }
+
         public IActionResult SetRoleStudent()
         {
             ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem

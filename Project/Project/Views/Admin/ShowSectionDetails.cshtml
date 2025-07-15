@@ -43,7 +43,7 @@
                 </div>
 
               
-                <div class="card mb-4">
+                <div class="card mb-4" dir="rtl">
                     <div class="card-header bg-primary text-white">
                         <h4 class="mb-0 text-center ">اساتید</h4>
                     </div>
@@ -55,12 +55,22 @@
                                     <tr>
                                         <th class="text-center">نام استاد</th>
                                         <th class="text-center">ایمیل</th>
+                                        <th class="text-center">عملیات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="text-center">@($"{Model.teach.instructor.user.First_Name} {Model.teach.instructor.user.Last_Name}")</td>
                                         <td class="text-center">@Model.teach.instructor.user.Email</td>
+                                        <td class="text-center">
+                                            <form asp-action="DeleteInstructorFromSection" method="post" style="display:inline;">
+                                                <input type="hidden" name="instructorId" value="@Model.teach.instructor_id" />
+                                                <input type="hidden" name="sectionId" value="@Model.teach.section_id" />
+                                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('آیا مطمئن هستید که می‌خواهید این استاد  را از این کلاس حذف کنید؟');">
+                                                    حذف
+                                                </button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -72,8 +82,8 @@
                     </div>
                 </div>
 
-               
-                <div class="card">
+
+                <div class="card" dir="rtl">
                     <div class="card-header bg-primary text-white">
                         <h4 class="mb-0 text-center">دانشجویان</h4>
                     </div>

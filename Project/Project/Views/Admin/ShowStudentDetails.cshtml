@@ -4,7 +4,7 @@
     ViewData["Title"] = "جزئیات دانشجو";
 }
 
-<div class="container mt-4">
+<div class="container mt-4" dir="rtl">
     <h2 class="text-primary fw-bold text-end" style="direction:rtl">جزئیات دانشجو: @((Model != null && Model.users != null ? Model.users.First_Name + " " + Model.users.Last_Name : "نامشخص"))</h2>
 
     @if (Model == null || Model.takes == null || !Model.takes.Any())

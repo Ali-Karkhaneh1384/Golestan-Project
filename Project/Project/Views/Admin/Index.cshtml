@@ -44,15 +44,15 @@
                             {
                                 <tr>
                                     <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
-<<<<<<< HEAD
+
                                     <td style="padding-bottom:17px; padding-top:0px">
-=======
-                                    <td>
+
+                                    <td style="padding-bottom:17px; padding-top:0px">
                                         <form asp-action="ShowInstructorDetails" method="get" style="display:inline;">
                                             <input type="hidden" name="instructorId" value="@instructor.instructor_id" />
-                                            <button type="submit" style="background-color:olivedrab" class="btn btn-primary mt-4">جزئیات</button>
+                                            <button type="submit"  class="btn btn-primary mt-4">جزئیات</button>
                                         </form>
->>>>>>> d72d20ded66c70883e712b3ca0284401a9aa0708
+
                                         <form asp-action="DeleteInstructor" method="post" style="display:inline;">
                                             <input type="hidden" name="InstructorId" value="@instructor.instructor_id" />
                                             <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
