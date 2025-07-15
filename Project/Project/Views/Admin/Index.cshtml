@@ -15,14 +15,14 @@
                             {
                                 <tr>
                                     <td>@student.users.First_Name @student.users.Last_Name <br /> @student.users.Email</td>
-                                    <td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
                                         <form asp-action="ShowStudentDetails" method="get" style="display:inline;">
                                             <input type="hidden" name="studentId" value="@student.student_id" /> 
-                                            <button type="submit" style="background-color:olivedrab" class="btn btn-primary mt-4">جزئیات</button>
+                                            <button type="submit" class="btn btn-primary mt-4">جزئیات</button>
                                         </form>
                                         <form asp-action="DeleteStudent" method="post" style="display:inline;">
                                             <input type="hidden" name="StudentId" value="@student.student_id" />
-                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
                                         </form>
                                         
                                     </td>
@@ -44,10 +44,10 @@
                             {
                                 <tr>
                                     <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
-                                    <td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
                                         <form asp-action="DeleteInstructor" method="post" style="display:inline;">
                                             <input type="hidden" name="InstructorId" value="@instructor.instructor_id" />
-                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -81,10 +81,10 @@
                                     <td>@course.Title</td>
                                     <td>@course.unit</td>
                                     <td>@course.description</td>
-                                    <td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
                                         <form asp-action="DeleteCourse" method="post" style="display:inline;">
                                             <input type="hidden" name="CourseId" value="@course.Id" />
-                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -121,10 +121,14 @@
                                     <td>@sections.year</td>
                                     <td>@sections.final_exam_date.ToString("yyyy-MM-dd")</td>
                                     <td>@sections.classroom?.room_number</td>
-                                    <td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
+                                        <form asp-action="ShowSectionDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="sectionId" value="@sections.Id" />
+                                            <button type="submit" class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
                                         <form asp-action="DeleteSection" method="post" style="display:inline;">
                                             <input type="hidden" name="SectionId" value="@sections.Id" />
-                                            <button type="submit" class="btn btn-primary mt-4">حذف</button>
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
                                         </form>
                                     </td>
                                 </tr>

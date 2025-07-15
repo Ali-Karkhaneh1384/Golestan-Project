@@ -39,6 +39,8 @@ namespace Project.Controllers
                     .ThenInclude(t => t.sections)
                     .ThenInclude(s => s.course)
                     .ThenInclude(c => c.sections)
+                    .ThenInclude(s => s.classroom)
+                    .ThenInclude(c => c.sections)
                     .ThenInclude(s => s.teach)
                     .ThenInclude(t => t.instructor)
                     .ThenInclude(i => i.user)
@@ -48,6 +50,32 @@ namespace Project.Controllers
                 return NotFound("دانشجو یافت نشد");
             }
             return View(student);
+        }
+        public IActionResult ShowSectionDetails(int sectionId)
+        {
+            var section = _dbContext.sections
+        .Include(s => s.classroom)
+        .ThenInclude(c => c.sections)
+        .ThenInclude(s => s.course)
+        .ThenInclude(c => c.sections)
+        .ThenInclude(s => s.section_Times)
+        .ThenInclude(s => s.time_slot)
+        .ThenInclude(t => t.section_Times)
+        .ThenInclude(s => s.section)
+        .Include(s => s.takes)
+        .ThenInclude(t => t.students)
+        .ThenInclude(s => s.users)
+        .Include(s => s.teach)
+        .ThenInclude(t => t.instructor)
+        .ThenInclude(i => i.user)
+        .FirstOrDefault(s => s.Id == sectionId);
+
+            if (section == null)
+            {
+                return NotFound("کلاس درس یافت نشد");
+            }
+
+            return View(section);
         }
         public IActionResult CreateUser()
         {
@@ -172,7 +200,7 @@ namespace Project.Controllers
             return RedirectToAction("Failure");
         }
         [HttpPost]
-        public IActionResult DeleteStudentFromSection(int studentId, int sectionId)
+        public IActionResult DeleteSectionFromStudent(int studentId, int sectionId)
         {
             var student = _dbContext.students
                 .Include(s => s.takes)
@@ -192,6 +220,28 @@ namespace Project.Controllers
 
             return RedirectToAction("ShowStudentDetails", new { studentId = studentId });
         }
+        [HttpPost]
+        public IActionResult DeleteStudentFromSection(int studentId, int sectionId)
+        {
+            var student = _dbContext.students
+                .Include(s => s.takes)
+                .FirstOrDefault(s => s.student_id == studentId);
+
+            if (student == null)
+            {
+                return NotFound("دانش‌آموز یافت نشد.");
+            }
+
+            var takeToRemove = student.takes.FirstOrDefault(t => t.section_id == sectionId);
+            if (takeToRemove != null)
+            {
+                _dbContext.takes.Remove(takeToRemove);
+                _dbContext.SaveChanges();
+            }
+
+            return RedirectToAction("ShowSectionDetails", new { sectionId = sectionId });
+        }
+        
         public IActionResult SetRoleStudent()
         {
             ViewBag.UsersList = _dbContext.users.Where(x => x.Id != 1).Select(x => new SelectListItem
