@@ -235,8 +235,9 @@ namespace Project.Controllers
             student.enrollment_date = DateTime.Now;
             if (ModelState.IsValid)
             {
+                if (await _dbContext.students.AllAsync(x => x.user_id == student.user_id))
+                    _dbContext.user_roles.Add(new user_roles { UserId = student.user_id, RoleId = 3 });
                 _dbContext.students.Add(student);
-                _dbContext.user_roles.Add(new user_roles { UserId = student.user_id, RoleId = 3 });
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
@@ -257,8 +258,9 @@ namespace Project.Controllers
             instructor.hire_date = DateTime.Now;
             if (ModelState.IsValid)
             {
+                if (await _dbContext.instructors.AllAsync(x => x.user_id == instructor.user_id))
+                    _dbContext.user_roles.Add(new user_roles { UserId = instructor.user_id, RoleId = 2 });
                 _dbContext.instructors.Add(instructor);
-                _dbContext.user_roles.Add(new user_roles { UserId = instructor.user_id, RoleId = 2 });
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
