@@ -163,6 +163,21 @@ namespace Project.Controllers
                         if(j == j)
                         {
                             ModelState.AddModelError("", "این کلاس در این زمان اشغال است");
+                            ViewBag.CourseList = _dbContext.courses.Select(x => new SelectListItem
+                            {
+                                Value = x.Id.ToString(),
+                                Text = $"{x.Title} ({x.code})"
+                            });
+                            ViewBag.ClassroomList = _dbContext.classrooms.Select(x => new SelectListItem
+                            {
+                                Value = x.Id.ToString(),
+                                Text = $"{x.building} - class: {x.room_number} ({x.capacity})"
+                            });
+                            ViewBag.TimeSlotList = _dbContext.timeslots.Select(x => new SelectListItem
+                            {
+                                Value = x.Id.ToString(),
+                                Text = $"{x.day} ({x.start_time.ToString(@"hh\:mm")} - {x.end_time.ToString(@"hh\:mm")})"
+                            });
                             return View();
                         }
                 _dbContext.sections.Add(section);
@@ -203,6 +218,11 @@ namespace Project.Controllers
                     if (i.time_slot_id == j)
                     {
                         ModelState.AddModelError("", "استاد در این زمان کلاس دیگری دارد");
+                        ViewBag.InstructorList = _dbContext.instructors.Include(i => i.user).Select(x => new SelectListItem
+                        {
+                            Value = x.instructor_id.ToString(),
+                            Text = $"{x.user.First_Name} {x.user.Last_Name} ({x.user.Email})"
+                        });
                         return View(model);
                     }
             _dbContext.teaches.Add(teachModel);
@@ -241,6 +261,16 @@ namespace Project.Controllers
                         if(i.time_slot_id == j)
                         {
                             ModelState.AddModelError("", "استاد در این زمان کلاس دیگری دارد");
+                            ViewBag.SectionList = _dbContext.sections.Include(x => x.classroom).Include(x => x.course).Include(x => x.teach).Where(x => x.teach == null).Select(x => new SelectListItem
+                            {
+                                Value = x.Id.ToString(),
+                                Text = $"Course: {x.course.Title} - Classroom: {x.classroom.building}({x.classroom.room_number})"
+                            });
+                            ViewBag.InstructorList = _dbContext.instructors.Include(i => i.user).Select(x => new SelectListItem
+                            {
+                                Value = x.instructor_id.ToString(),
+                                Text = $"{x.user.First_Name} {x.user.Last_Name} ({x.user.Email})"
+                            });
                             return View(model);
                         }
                 _dbContext.teaches.Add(model);
@@ -278,6 +308,17 @@ namespace Project.Controllers
                 if (await _dbContext.takes.AnyAsync(t => t.student_id == model.student_id && t.section_id == model.section_id))
                 {
                     ModelState.AddModelError("", "این دانشجو قبلاً در این بخش ثبت‌نام کرده است.");
+                    ViewBag.students = _dbContext.students.Select(s => new SelectListItem
+                    {
+                        Value = s.student_id.ToString(),
+                        Text = $"{s.users.First_Name} {s.users.Last_Name} ({s.users.Email})"
+                    }).ToList();
+
+                    ViewBag.sections = _dbContext.sections.Select(s => new SelectListItem
+                    {
+                        Value = s.Id.ToString(),
+                        Text = $"{s.course.Title} -  نیمسال {s.semester}"
+                    }).ToList();
                     return View(model);
                 }
                 var SectionStudentNum = await _dbContext.takes.Where(x => x.section_id == model.section_id).CountAsync();
