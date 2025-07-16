@@ -13,9 +13,9 @@ namespace Project.Models
         public int section_id {  get; set; }
 
         [ForeignKey("instructor_id")]
-        public instructors instructor { get; set; }
+        public instructors? instructor { get; set; }
         [ForeignKey("section_id")]
-        public sections section {  get; set; }
+        public sections? section {  get; set; }
         
 
 

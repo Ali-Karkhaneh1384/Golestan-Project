@@ -17,17 +17,17 @@ namespace Project.Controllers
         {
             _dbContext = dbContext;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             ViewBag.db = new
             {
                 students = _dbContext.students.Include(s => s.users).ToList(),
                 instructors = _dbContext.instructors.Include(i => i.user).ToList(),
                 courses = _dbContext.courses.ToList(),
-                sections = _dbContext.sections
+                sections = await _dbContext.sections
                     .Include(s => s.course)
                     .Include(s => s.classroom)
-                    .ToList()
+                    .ToListAsync()
             };
             return View();
         }
@@ -147,8 +147,9 @@ namespace Project.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> CreateSection(sections section)
+        public async Task<IActionResult> CreateSection(sections section, int finalDay, int finalMonth, int finalYear)
         {
+            section.final_exam_date = new DateTime(finalYear, finalMonth, finalDay);
             if(ModelState.IsValid)
             {
                 _dbContext.sections.Add(section);
@@ -178,6 +179,31 @@ namespace Project.Controllers
             _dbContext.teaches.Add(new teach { instructor_id =  model.InstructorId , section_id = model.SectionId});
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Success");
+        }
+        public IActionResult AddInstructorToSection()
+        {
+            ViewBag.SectionList = _dbContext.sections.Include(x => x.classroom).Include(x => x.course).Include(x => x.teach).Where(x => x.teach == null).Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = $"Course: {x.course.Title} - Classroom: {x.classroom.building}({x.classroom.room_number})"
+            });
+            ViewBag.InstructorList = _dbContext.instructors.Include(i => i.user).Select(x => new SelectListItem
+            {
+                Value = x.instructor_id.ToString(),
+                Text = $"{x.user.First_Name} {x.user.Last_Name} ({x.user.Email})"
+            });
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddInstructorToSection(teach model)
+        {
+            if(ModelState.IsValid)
+            {
+                _dbContext.teaches.Add(model);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction("Success");
+            }
+            return RedirectToAction("Failure");
         }
         public IActionResult AddStudentToSection()
         {
