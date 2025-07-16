@@ -18,7 +18,7 @@
                 <select asp-for="student_id" asp-items="ViewBag.Students" class="form-control">
                     <option value="">انتخاب دانشجو</option>
                 </select>
-                <span asp-validation-for="student_id" class="text-danger"></span>
+                <span class="text-danger"></span>
             </div>
 
             <div class="form-group text-end">
@@ -26,13 +26,7 @@
                 <select asp-for="section_id" asp-items="ViewBag.Sections" class="form-control">
                     <option value="">انتخاب کلاس</option>
                 </select>
-                <span asp-validation-for="section_id" class="text-danger"></span>
-            </div>
-
-            <div class="form-group text-end">
-                <label asp-for="grade">نمره</label>
-                <input asp-for="grade" type="number" value="0" min="0" max="20" step="1" class="form-control" />
-                <span asp-validation-for="grade" class="text-danger"></span>
+                <span  class="text-danger"></span>
             </div>
 
             <button type="submit" class="btn btn-primary mt-4">ثبت‌نام</button>
@@ -106,3 +100,6 @@
         font-size: 0.9rem;
     }
 </style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

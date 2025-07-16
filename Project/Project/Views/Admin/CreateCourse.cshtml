@@ -12,22 +12,23 @@
         </div>
 
         <form asp-action="CreateCourse" method="post" dir="rtl">
+            <div asp-validation-summary="All" class="text-danger text-center mb-3"></div>
             <div class="form-group">
                 <label asp-for="Title">عنوان</label>
                 <input asp-for="Title" class="form-control" required placeholder="عنوان را وارد کنید" />
-                <span asp-validation-for="Title" class="text-danger"></span>
+                <span class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="code">کد درس</label>
                 <input asp-for="code" class="form-control" required placeholder="کد درس را وارد کنید" />
-                <span asp-validation-for="code" class="text-danger"></span>
+                <span  class="text-danger"></span>
             </div>
 
             <div class="form-group" style="direction: rtl; text-align: right;">
                 <label asp-for="unit" >واحد</label>
                 <input asp-for="unit" class="form-control" type="number" min="0" placeholder="تعداد واحد را به عدد وارد کنید" />
-                <span asp-validation-for="unit" class="text-danger"></span>
+                <span  class="text-danger"></span>
             </div>
 
             <div class="form-group">
@@ -38,7 +39,7 @@
                           placeholder="توضیحات را وارد کنید"
                           rows="5"
                           style="min-height: 120px; resize: vertical;"></textarea>
-                <span asp-validation-for="description" class="text-danger"></span>
+                <span  class="text-danger"></span>
             </div>
 
             <button type="submit" class="btn btn-primary mt-4">ایجاد</button>
@@ -99,3 +100,6 @@
         font-size: 0.9rem;
     }
 </style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

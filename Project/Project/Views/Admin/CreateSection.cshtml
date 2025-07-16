@@ -18,7 +18,7 @@
                 <div class="form-group" style="direction: rtl; text-align: right;">
                     <label for="course_id">دوره آموزش</label>
                     <select asp-for="course_id" asp-items="ViewBag.CourseList" class="form-control"></select>
-                    <span asp-validation-for="course_id" class="text-danger"></span>
+                    <span class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group">
@@ -32,7 +32,7 @@
                     <label for="time_slot_id">زمان‌بندی</label>
                     <select asp-for="TimeSlotIds" asp-items="ViewBag.TimeSlotList" class="form-control" multiple="multiple">
                     </select>
-                    <span asp-validation-for="TimeSlotIds" class="text-danger"></span>
+                    <span  class="text-danger"></span>
                 </div>
             </div>
 
@@ -43,27 +43,27 @@
                         <option value="1">1</option>
                         <option value="2">2</option>
                     </select>
-                    <span asp-validation-for="semester" class="text-danger"></span>
+                    <span  class="text-danger"></span>
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label asp-for="year">سال تحصیلی</label>
                     <input asp-for="year" class="form-control" type="number" min="1350" max="1404" />
-                    <span asp-validation-for="year" class="text-danger"></span>
+                    <span  class="text-danger"></span>
                 </div>
             </div>
             
             <div class="form-row" style="display: flex; gap: 15px">
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>روز آزمون</label>
-                    <input Name="finalDay" class="form-control" type="number" min="1" max="31" />
+                    <input  data-val="true" data-val-required="وارد کردن روز آزمون الزامی است" Name="finalDay" class="form-control" type="number" min="1" max="31" required />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>ماه آزمون</label>
-                    <input Name="finalMonth" class="form-control" type="number" min="1" max="12" />
+                    <input  data-val="true" data-val-required="وارد کردن ماه آزمون الزامی است" Name="finalMonth" class="form-control" type="number" min="1" max="12" required />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>سال آزمون</label>
-                    <input Name="finalYear" class="form-control" type="number" min="1350" max="1404" />
+                    <input  data-val="true" data-val-required="وارد کردن سال آزمون الزامی است" Name="finalYear" class="form-control" type="number" min="1350" max="1404" required />
                 </div>
             </div>
 
@@ -124,3 +124,6 @@
         font-size: 0.9rem;
     }
 </style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

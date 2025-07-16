@@ -5,27 +5,29 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
+<div  class="text-center">
     <div class="register-container">
         <div class="register-header">
             <h2>تخصیص استاد به کاربر</h2>
-            <p class="text-muted" style="margin-top: 15px; margin-bottom: 5px">لطفا کاربر مورد نظر را انتخاب کنید</p>
+            
         </div>
 
-        <form asp-action="SetRoleInstructor" method="post" dir="rtl">
-            <div class="form-group">
+        <form asp-action="SetRoleInstructor"  method="post" dir="rtl">
+            <div asp-validation-summary="All" style="margin-top:20px" class="text-danger text-center mb-3"></div>
+            <p class="text-muted" style="margin-top: 15px; margin-bottom: 5px">لطفا کاربر مورد نظر را انتخاب کنید</p>
+            <div  class="form-group">
                 <div class="form-group" style="direction: rtl; text-align: right;">
                     <label for="user_id"></label>
                     <select asp-for="user_id" asp-items="ViewBag.UsersList" class="form-control"></select>
-                    <span asp-validation-for="user_id" class="text-danger"></span>
+                    <span  class="text-danger"></span>
                 </div>
             </div>
             <p class="text-muted" style="margin-top: 15px; margin-bottom: 10px">لطفا حقوق استاد را وارد کنید</p>
             <div class="form-group" style="direction: rtl; text-align: right;">
                 
                 <label asp-for="salary" hidden="true"></label>
-                <input asp-for="salary" class="form-control" type="number" min="0" placeholder="حقوق را به عدد وارد کنید" />
-                <span asp-validation-for="salary" class="text-danger"></span>
+                <input asp-for="salary" class="form-control" type="number" min="0" placeholder="حقوق را به عدد وارد کنید"/>
+                <span class="text-danger"></span>
             </div>
 
             <button type="submit" class="btn btn-primary mt-4">تایید</button>
@@ -86,3 +88,6 @@
         font-size: 0.9rem;
     }
 </style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

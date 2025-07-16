@@ -17,13 +17,17 @@
             <div class="form-group">
                 <div class="form-group" style="direction: rtl; text-align: right;">
                     <label for="section_id">کلاس</label>
-                    <select asp-for="section_id" asp-items="ViewBag.SectionList" class="form-control"></select>
+                    <select asp-for="section_id" asp-items="ViewBag.SectionList" class="form-control">
+                        <option value="">انتخاب کلاس</option>
+                    </select>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-group" style="direction: rtl; text-align: right;">
                     <label for="instructor_id">استاد</label>
-                    <select asp-for="instructor_id" asp-items="ViewBag.InstructorList" class="form-control"></select>
+                    <select asp-for="instructor_id" asp-items="ViewBag.InstructorList" class="form-control">
+                        <option value="">انتخاب استاد</option>
+                    </select>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary mt-4">تایید</button>
@@ -84,3 +88,6 @@
         font-size: 0.9rem;
     }
 </style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
