@@ -152,6 +152,19 @@ namespace Project.Controllers
             section.final_exam_date = new DateTime(finalYear, finalMonth, finalDay);
             if(ModelState.IsValid)
             {
+                var sectionsSameClass = await _dbContext.sections.Include(x => x.section_Times).Where(x => x.classroom_id == section.classroom_id).ToListAsync();
+                var sameClassTimesId = new List<int>();
+                foreach(var sec in sectionsSameClass)
+                {
+                    foreach(var timeslot in sec.section_Times) sameClassTimesId.Add(timeslot.time_slot_id);
+                }
+                foreach(var i in sameClassTimesId)
+                    foreach(var j in section.TimeSlotIds)
+                        if(j == j)
+                        {
+                            ModelState.AddModelError("", "این کلاس در این زمان اشغال است");
+                            return View();
+                        }
                 _dbContext.sections.Add(section);
                 await _dbContext.SaveChangesAsync();
                 foreach(var x in section.TimeSlotIds)
@@ -176,7 +189,23 @@ namespace Project.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateTeach(SendSectionId model)
         {
-            _dbContext.teaches.Add(new teach { instructor_id =  model.InstructorId , section_id = model.SectionId});
+            var teachModel = new teach { instructor_id = model.InstructorId, section_id = model.SectionId };
+            var existingSectionTimes = new List<int>();
+            var modelSectionTimes = await _dbContext.section_Times.Where(x => x.section_id == teachModel.section_id).ToListAsync();
+            var modelInstructorTeaches = await _dbContext.teaches.Where(x => x.instructor_id == teachModel.instructor_id).ToListAsync();
+            foreach (var teach in modelInstructorTeaches)
+            {
+                var teachSectionTimes = await _dbContext.section_Times.Where(x => x.section_id == teach.section_id).ToListAsync();
+                foreach (var existingTimeSlotIds in teachSectionTimes) existingSectionTimes.Add(existingTimeSlotIds.time_slot_id);
+            }
+            foreach (var i in modelSectionTimes)
+                foreach (var j in existingSectionTimes)
+                    if (i.time_slot_id == j)
+                    {
+                        ModelState.AddModelError("", "استاد در این زمان کلاس دیگری دارد");
+                        return View(model);
+                    }
+            _dbContext.teaches.Add(teachModel);
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Success");
         }
@@ -199,6 +228,21 @@ namespace Project.Controllers
         {
             if(ModelState.IsValid)
             {
+                var existingSectionTimes = new List<int>();
+                var modelSectionTimes = await _dbContext.section_Times.Where(x => x.section_id == model.section_id).ToListAsync();
+                var modelInstructorTeaches = await _dbContext.teaches.Where(x => x.instructor_id == model.instructor_id).ToListAsync();
+                foreach(var teach in modelInstructorTeaches)
+                {
+                    var teachSectionTimes = await _dbContext.section_Times.Where(x => x.section_id == teach.section_id).ToListAsync();
+                    foreach(var existingTimeSlotIds in teachSectionTimes) existingSectionTimes.Add(existingTimeSlotIds.time_slot_id);
+                }
+                foreach(var i in modelSectionTimes)
+                    foreach(var j in existingSectionTimes)
+                        if(i.time_slot_id == j)
+                        {
+                            ModelState.AddModelError("", "استاد در این زمان کلاس دیگری دارد");
+                            return View(model);
+                        }
                 _dbContext.teaches.Add(model);
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");

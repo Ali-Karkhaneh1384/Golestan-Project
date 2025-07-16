@@ -13,6 +13,7 @@
         </div>
 
         <form asp-action="CreateSection" method="post" dir="rtl">
+            <div asp-validation-summary="All" class="text-danger text-center mb-3"></div>
             <div class="form-group">
                 <div class="form-group" style="direction: rtl; text-align: right;">
                     <label for="course_id">دوره آموزش</label>
@@ -53,12 +54,15 @@
             
             <div class="form-row" style="display: flex; gap: 15px">
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>روز آزمون</label>
                     <input Name="finalDay" class="form-control" type="number" min="1" max="31" />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>ماه آزمون</label>
                     <input Name="finalMonth" class="form-control" type="number" min="1" max="12" />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>سال آزمون</label>
                     <input Name="finalYear" class="form-control" type="number" min="1350" max="1404" />
                 </div>
             </div>
