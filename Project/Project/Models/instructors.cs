@@ -7,19 +7,20 @@ namespace Project.Models
     public class instructors
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int instructor_id {  get; set; }
         public int user_id {  get; set; }
         [Column(TypeName ="decimal(10,2)")]
-        [Required(ErrorMessage ="حقوق نمیتواند خالی باشد ") ]
+        [Required(ErrorMessage ="وارد کردن حقوق استاد الزامی است ") ]
         public decimal salary {  get; set; }
         [Required(ErrorMessage = "تاریخ استخدام نمیتواند خالی باشد ")]
         public DateTime hire_date { get; set; }
 
 
 
-        [ForeignKey("instructor_id")]
-        public users user { get; set; }
-        public ICollection<teach> teaches { get; set; }
+        [ForeignKey("user_id")]
+        public users? user { get; set; }
+        public ICollection<teach>? teaches { get; set; }
     }
 }

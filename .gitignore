@@ -1,1 +1,8 @@
-.vs
+.vs/
+*.suo
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+appsettings.json

@@ -1,0 +1,100 @@
+﻿@model Project.Models.users
+
+@{
+    ViewData["Title"] = "اضافه کردن کاربر";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    <div class="register-container">
+        <div class="register-header">
+            <h2>ثبت نام کاربر جدید</h2>
+            <p class="text-muted">لطفا اطلاعات کاربر را وارد نمایید</p>
+        </div>
+        
+        <form asp-action="CreateUser" method="post" dir="rtl">
+            <div asp-validation-summary="All" class="text-danger text-center mb-3"></div>
+            <div class="form-group">
+                <label asp-for="First_Name">نام</label>
+                <input asp-for="First_Name" class="form-control" required placeholder="نام را وارد کنید" />
+                <span class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Last_Name">نام خانوادگی</label>
+                <input asp-for="Last_Name" class="form-control" required placeholder="نام خانوادگی را وارد کنید" />
+                <span  class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Email">ایمیل</label>
+                <input asp-for="Email" type="email" class="form-control" required placeholder="ایمیل را وارد کنید" />
+                <span  class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Hashed_Password">رمز عبور</label>
+                <input asp-for="Hashed_Password" type="password" class="form-control" required placeholder="رمز را وارد کنید" />
+                <span class="text-danger"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary mt-4">ثبت نام</button>
+            <div style="direction: rtl; text-align: right; margin-top: 20px">
+                <a href="https://localhost:7256/Admin/Index">بازگشت</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<style>
+    .register-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        max-width: 500px;
+        margin: 50px auto;
+    }
+
+    .register-header h2 {
+        color: #003087;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-muted {
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: right;
+    }
+
+    .btn-primary {
+        background-color: #003087;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem;
+        width: 100%;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #00205b;
+    }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 0.9rem;
+    }
+</style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -14,6 +14,6 @@ namespace Project.Models
         public DateTime start_time { get; set; }
         [Required(ErrorMessage = "زمان پایان نمیتواند خالی باشد")]
         public DateTime end_time { get; set; }
-        public ICollection<sections> sections { get; set; }
+        public ICollection<section_time> section_Times { get; set; }
     }
 }

@@ -1,6 +1,188 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "داشبورد ادمین";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
-<h1>hey you</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <div class="register-container" dir="rtl">
+                <h2 class="text-center">لیست دانشجوها</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <tbody>
+                            @foreach (var student in ViewBag.db.students ?? new List<students>())
+                            {
+                                <tr>
+                                    <td>@student.users.First_Name @student.users.Last_Name <br /> @student.users.Email</td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
+                                        <form asp-action="ShowStudentDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="studentId" value="@student.student_id" /> 
+                                            <button type="submit" class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
+                                        <form asp-action="DeleteStudent" method="post" style="display:inline;">
+                                            <input type="hidden" name="StudentId" value="@student.student_id" />
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
+                                        </form>
+                                        
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="register-container" dir="rtl">
+                <h2 class="text-center">لیست اساتید</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <tbody>
+                            @foreach (var instructor in ViewBag.db.instructors ?? new List<instructors>())
+                            {
+                                <tr>
+                                    <td>@instructor.user.First_Name @instructor.user.Last_Name <br /> @instructor.user.Email</td>
+
+                                    <td style="padding-bottom:17px; padding-top:0px">
+
+                                    <td style="padding-bottom:17px; padding-top:0px">
+                                        <form asp-action="ShowInstructorDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="instructorId" value="@instructor.instructor_id" />
+                                            <button type="submit"  class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
+
+                                        <form asp-action="DeleteInstructor" method="post" style="display:inline;">
+                                            <input type="hidden" name="InstructorId" value="@instructor.instructor_id" />
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="col-md-6 mb-4">
+            <div class="register-container" dir="rtl">
+                <h2 class="text-center">لیست دروس</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>کد درس</th>
+                                <th>عنوان</th>
+                                <th>واحد</th>
+                                <th>توضیحات</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var course in ViewBag.db.courses ?? new List<courses>())
+                            {
+                                <tr>
+                                    <td>@course.code</td>
+                                    <td>@course.Title</td>
+                                    <td>@course.unit</td>
+                                    <td>@course.description</td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
+                                        <form asp-action="DeleteCourse" method="post" style="display:inline;">
+                                            <input type="hidden" name="CourseId" value="@course.Id" />
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="col-md-6 mb-4">
+            <div class="register-container" dir="rtl">
+                <h2 class="text-center">لیست کلاس ها</h2>
+                <div class="table-scroll" style="min-height: 300px; max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>کد درس</th>
+                                <th>سال</th>
+                                <th>نیمسال</th>
+                                <th>تاریخ امتحان</th>
+                                <th>کلاس</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sections in ViewBag.db.sections ?? new List<sections>())
+                            {
+                                <tr>
+                                    <td>@sections.course.code</td>
+                                    <td>@sections.year</td>
+                                    <td>@sections.semester</td>
+                                    <td>@sections.final_exam_date.ToString("yyyy-MM-dd")</td>
+                                    <td>@sections.classroom?.room_number</td>
+                                    <td style="padding-bottom:17px; padding-top:0px">
+                                        <form asp-action="ShowSectionDetails" method="get" style="display:inline;">
+                                            <input type="hidden" name="sectionId" value="@sections.Id" />
+                                            <button type="submit" class="btn btn-primary mt-4">جزئیات</button>
+                                        </form>
+                                        <form asp-action="DeleteSection" method="post" style="display:inline;">
+                                            <input type="hidden" name="SectionId" value="@sections.Id" />
+                                            <button type="submit" class="btn btn-danger mt-4" style="width:60px; height:37px">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .register-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .register-header h2, h2.text-center {
+        color: #003087;
+        margin-bottom: 1rem;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-danger:hover {
+        background-color: #a71d2a;
+    }
+    
+
+    table th, table td {
+        vertical-align: middle;
+    }
+
+    .table-scroll {
+        display: block;
+    }
+</style>

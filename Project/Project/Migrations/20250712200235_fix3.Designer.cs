@@ -4,6 +4,7 @@ using Golestan_Project.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Project.Migrations
 {
     [DbContext(typeof(GolestanDbContext))]
-    partial class GolestanDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250712200235_fix3")]
+    partial class fix3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -167,21 +170,6 @@ namespace Project.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Project.Models.section_time", b =>
-                {
-                    b.Property<int>("section_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("time_slot_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("section_id", "time_slot_id");
-
-                    b.HasIndex("time_slot_id");
-
-                    b.ToTable("section_Times");
-                });
-
             modelBuilder.Entity("Project.Models.sections", b =>
                 {
                     b.Property<int>("Id")
@@ -202,6 +190,9 @@ namespace Project.Migrations
                     b.Property<int>("semester")
                         .HasColumnType("int");
 
+                    b.Property<int>("time_slot_id")
+                        .HasColumnType("int");
+
                     b.Property<int>("year")
                         .HasColumnType("int");
 
@@ -210,6 +201,8 @@ namespace Project.Migrations
                     b.HasIndex("classroom_id");
 
                     b.HasIndex("course_id");
+
+                    b.HasIndex("time_slot_id");
 
                     b.ToTable("sections");
                 });
@@ -281,11 +274,11 @@ namespace Project.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(225)");
 
-                    b.Property<DateTime>("end_time")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("end_time")
+                        .HasColumnType("time");
 
-                    b.Property<DateTime>("start_time")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("start_time")
+                        .HasColumnType("time");
 
                     b.HasKey("Id");
 
@@ -296,64 +289,64 @@ namespace Project.Migrations
                         {
                             Id = 1,
                             day = "Saturday",
-                            end_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 10, 0, 0, 0),
+                            start_time = new TimeSpan(0, 8, 0, 0, 0)
                         },
                         new
                         {
                             Id = 2,
                             day = "Saturday",
-                            end_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 12, 0, 0, 0),
+                            start_time = new TimeSpan(0, 10, 0, 0, 0)
                         },
                         new
                         {
                             Id = 3,
                             day = "Saturday",
-                            end_time = new DateTime(1, 1, 1, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 16, 0, 0, 0),
+                            start_time = new TimeSpan(0, 14, 0, 0, 0)
                         },
                         new
                         {
                             Id = 4,
                             day = "Sunday",
-                            end_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 10, 0, 0, 0),
+                            start_time = new TimeSpan(0, 8, 0, 0, 0)
                         },
                         new
                         {
                             Id = 5,
                             day = "Sunday",
-                            end_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 12, 0, 0, 0),
+                            start_time = new TimeSpan(0, 10, 0, 0, 0)
                         },
                         new
                         {
                             Id = 6,
                             day = "Sunday",
-                            end_time = new DateTime(1, 1, 1, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 16, 0, 0, 0),
+                            start_time = new TimeSpan(0, 14, 0, 0, 0)
                         },
                         new
                         {
                             Id = 7,
                             day = "Monday",
-                            end_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 10, 0, 0, 0),
+                            start_time = new TimeSpan(0, 8, 0, 0, 0)
                         },
                         new
                         {
                             Id = 8,
                             day = "Monday",
-                            end_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 12, 0, 0, 0),
+                            start_time = new TimeSpan(0, 10, 0, 0, 0)
                         },
                         new
                         {
                             Id = 9,
                             day = "Monday",
-                            end_time = new DateTime(1, 1, 1, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            start_time = new DateTime(1, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            end_time = new TimeSpan(0, 16, 0, 0, 0),
+                            start_time = new TimeSpan(0, 14, 0, 0, 0)
                         });
                 });
 
@@ -433,25 +426,6 @@ namespace Project.Migrations
                     b.Navigation("user");
                 });
 
-            modelBuilder.Entity("Project.Models.section_time", b =>
-                {
-                    b.HasOne("Project.Models.sections", "section")
-                        .WithMany("section_Times")
-                        .HasForeignKey("section_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Project.Models.time_slots", "time_slot")
-                        .WithMany("section_Times")
-                        .HasForeignKey("time_slot_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("section");
-
-                    b.Navigation("time_slot");
-                });
-
             modelBuilder.Entity("Project.Models.sections", b =>
                 {
                     b.HasOne("Project.Models.classrooms", "classroom")
@@ -466,9 +440,17 @@ namespace Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Project.Models.time_slots", "time_slot")
+                        .WithMany("sections")
+                        .HasForeignKey("time_slot_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("classroom");
 
                     b.Navigation("course");
+
+                    b.Navigation("time_slot");
                 });
 
             modelBuilder.Entity("Project.Models.students", b =>
@@ -561,11 +543,10 @@ namespace Project.Migrations
 
             modelBuilder.Entity("Project.Models.sections", b =>
                 {
-                    b.Navigation("section_Times");
-
                     b.Navigation("takes");
 
-                    b.Navigation("teach");
+                    b.Navigation("teach")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Project.Models.students", b =>
@@ -575,7 +556,7 @@ namespace Project.Migrations
 
             modelBuilder.Entity("Project.Models.time_slots", b =>
                 {
-                    b.Navigation("section_Times");
+                    b.Navigation("sections");
                 });
 
             modelBuilder.Entity("Project.Models.users", b =>

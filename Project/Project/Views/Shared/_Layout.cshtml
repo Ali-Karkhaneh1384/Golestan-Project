@@ -1,5 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+@{
+        var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+        var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,23 +17,58 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">سامانه دانشگاهی گلستان</a>
+            <div class="container-fluid" style="direction: rtl; text-align: right;">
+                <a class="navbar-brand" >سامانه دانشگاهی گلستان</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        @if(currentController == "Admin" && currentAction=="Index")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="CreateUser">ساخت کاربر</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="roleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    تخصیص نقش
+                                </a>
+                                <ul class="dropdown-menu text-end" aria-labelledby="roleDropdown">
+                                    <li>
+                                        <a class="dropdown-item text-end" asp-area="" asp-controller="Admin" asp-action="SetRoleInstructor">استاد</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-end" asp-area="" asp-controller="Admin" asp-action="SetRoleStudent">دانشجو</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="CreateCourse">ساخت دوره</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="CreateSection">ساخت کلاس</a>
+                            </li>
+                            @*<li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="AddStudentToSection">ثبت کلاس برای استاد</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="AddStudentToSection">ثبت کلاس برای دانش آموز</a>
+                            </li>*@
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="roleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    تخصیص برای کلاس
+                                </a>
+                                <ul class="dropdown-menu text-end" aria-labelledby="roleDropdown">
+                                    <li>
+                                        <a class="dropdown-item text-end" asp-area="" asp-controller="Admin" asp-action="AddInstructorToSection">استاد</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-end" asp-area="" asp-controller="Admin" asp-action="AddStudentToSection">دانشجو</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,129 @@
+﻿@model sections
+
+@{
+    ViewData["Title"] = "ساخت کلاس درس";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <div class="register-container">
+        <div class="register-header">
+            <h2>ساخت کلاس درس</h2>
+            <p class="text-muted" style="margin-top: 15px; margin-bottom: 5px"></p>
+        </div>
+
+        <form asp-action="CreateSection" method="post" dir="rtl">
+            <div asp-validation-summary="All" class="text-danger text-center mb-3"></div>
+            <div class="form-group">
+                <div class="form-group" style="direction: rtl; text-align: right;">
+                    <label for="course_id">دوره آموزش</label>
+                    <select asp-for="course_id" asp-items="ViewBag.CourseList" class="form-control"></select>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group" style="direction: rtl; text-align: right;">
+                    <label for="classroom_id">کلاس</label>
+                    <select asp-for="classroom_id" asp-items="ViewBag.ClassroomList" class="form-control"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group" style="direction: rtl; text-align: right;">
+                    <label for="time_slot_id">زمان‌بندی</label>
+                    <select asp-for="TimeSlotIds" asp-items="ViewBag.TimeSlotList" class="form-control" multiple="multiple">
+                    </select>
+                    <span  class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row" style="display: flex; gap: 15px;">
+                <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label asp-for="semester">نیمسال</label>
+                    <select asp-for="semester" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <span  class="text-danger"></span>
+                </div>
+                <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label asp-for="year">سال تحصیلی</label>
+                    <input asp-for="year" class="form-control" type="number" min="1350" max="1404" />
+                    <span  class="text-danger"></span>
+                </div>
+            </div>
+            
+            <div class="form-row" style="display: flex; gap: 15px">
+                <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>روز آزمون</label>
+                    <input  data-val="true" data-val-required="وارد کردن روز آزمون الزامی است" Name="finalDay" class="form-control" type="number" min="1" max="31" required />
+                </div>
+                <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>ماه آزمون</label>
+                    <input  data-val="true" data-val-required="وارد کردن ماه آزمون الزامی است" Name="finalMonth" class="form-control" type="number" min="1" max="12" required />
+                </div>
+                <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
+                    <label>سال آزمون</label>
+                    <input  data-val="true" data-val-required="وارد کردن سال آزمون الزامی است" Name="finalYear" class="form-control" type="number" min="1350" max="1404" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4">تایید</button>
+            <div style="direction: rtl; text-align: right; margin-top: 20px">
+                <a href="https://localhost:7256/Admin/Index">بازگشت</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .register-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        max-width: 500px;
+        margin: 50px auto;
+    }
+
+    .register-header h2 {
+        color: #003087;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-muted {
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: right;
+    }
+
+    .btn-primary {
+        background-color: #003087;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem;
+        width: 100%;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #00205b;
+        }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 0.9rem;
+    }
+</style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
