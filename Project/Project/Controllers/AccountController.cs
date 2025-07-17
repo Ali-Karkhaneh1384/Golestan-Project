@@ -31,8 +31,8 @@ namespace Golestan_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string email , string password)
         {
-            var user = await _dbContext.users.FirstOrDefaultAsync( user => user.Email == email );
-            if (user == null || password != user.Hashed_Password)
+            var user = await _dbContext.users.Include(x => x.Instructors).Include(x => x.students).FirstOrDefaultAsync( user => user.Email == email );
+            if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.Hashed_Password))
             {
                 ModelState.AddModelError("","ایمیل یا رمز عبور اشتباه است!");
                 return View();
@@ -56,11 +56,14 @@ namespace Golestan_Project.Controllers
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
             if (roles.Contains("Admin"))
                 return RedirectToAction("Index", "Admin");
+            else if (roles.Count > 1)
+                return RedirectToAction("WhichRole", "Registeration");
             else if (roles.Contains("Instructor"))
-                return RedirectToAction("Index", "Instructor");
+                return RedirectToAction("WhichInstructor", "Registeration");
             else
-                return RedirectToAction("Index", "Student");
-            
+                return RedirectToAction("WhichStudent", "Registeration");
+
+
         }
         [HttpPost]
         public async Task<IActionResult> Logout()

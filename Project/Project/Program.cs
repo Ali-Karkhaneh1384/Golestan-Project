@@ -6,6 +6,7 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<GolestanDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -22,6 +23,8 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("StudentOnly", policy => policy.RequireRole("Student"));
 });
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,11 +37,11 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}")

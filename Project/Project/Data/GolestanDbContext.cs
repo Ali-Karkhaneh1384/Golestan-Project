@@ -50,7 +50,7 @@ namespace Golestan_Project.Data
                 First_Name = "Admin",
                 Last_Name = "User",
                 Created_at = new DateTime(2024, 01, 01), 
-                Hashed_Password = "Admin@1234" 
+                Hashed_Password = "$2a$11$MohFe573LVHDoRRvORBe5OPMHTY5vsgv.TuYeSP/h2Nai50TwX81O"
             }
             );
 

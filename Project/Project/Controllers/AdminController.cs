@@ -105,6 +105,7 @@ namespace Project.Controllers
         {
             if(ModelState.IsValid)
             {
+                model.Hashed_Password = BCrypt.Net.BCrypt.HashPassword(model.Hashed_Password);
                 model.Created_at = DateTime.Now;
                 _dbContext.users.Add(model);
                 await _dbContext.SaveChangesAsync();
@@ -444,7 +445,7 @@ namespace Project.Controllers
             student.enrollment_date = DateTime.Now;
             if (ModelState.IsValid)
             {
-                if (await _dbContext.students.AllAsync(x => x.user_id == student.user_id))
+                if (await _dbContext.students.AllAsync(x => !(x.user_id == student.user_id)))
                     _dbContext.user_roles.Add(new user_roles { UserId = student.user_id, RoleId = 3 });
                 _dbContext.students.Add(student);
                 await _dbContext.SaveChangesAsync();
@@ -467,7 +468,7 @@ namespace Project.Controllers
             instructor.hire_date = DateTime.Now;
             if (ModelState.IsValid)
             {
-                if (await _dbContext.instructors.AllAsync(x => x.user_id == instructor.user_id))
+                if (await _dbContext.instructors.AllAsync(x => !(x.user_id == instructor.user_id)))
                     _dbContext.user_roles.Add(new user_roles { UserId = instructor.user_id, RoleId = 2 });
                 _dbContext.instructors.Add(instructor);
                 await _dbContext.SaveChangesAsync();
