@@ -1,0 +1,110 @@
+﻿@model sections
+
+@{
+	ViewData["Title"] = "جزئیات کلاس درس";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="mb-0" style="direction:rtl">جزئیات کلاس درس: @Model.course.Title</h2>
+        </div>
+        <div class="card-body p-4">
+            @if (Model == null)
+            {
+                <div class="alert alert-warning text-center">اطلاعاتی برای این کلاس درس یافت نشد.</div>
+            }
+            else
+            {
+                <div class="row mb-4">
+                    <div class="col-md-6 text-end">
+                        <h4 class="text-primary">زمان کلاس ها</h4>
+                        @if (Model.section_Times != null && Model.section_Times.Any())
+                        {
+                            @foreach (var time in Model.section_Times)
+                            {
+                                <p><strong>@time.time_slot.day :</strong> @time.time_slot.start_time.ToString("HH:mm") - @time.time_slot.end_time.ToString("HH:mm")</p>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-center text-muted">هیچ زمان‌بندی برای این کلاس ثبت نشده است.</p>
+                        }
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <h4 class="text-primary">اطلاعات کلی</h4>
+                        <p><strong>سال:</strong> @Model.year</p>
+                        <p><strong>نیمسال:</strong> @Model.semester</p>
+                        <p style="direction:rtl"><strong>کلاس: </strong>(@Model.classroom.building) @Model.classroom.room_number</p>
+                        <p><strong>تاریخ امتحان:</strong> @Model.final_exam_date.ToString("yyyy/MM/dd")</p>
+                    </div>
+
+                </div>
+
+
+                <div class="card" dir="rtl">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0 text-center">دانشجویان</h4>
+                    </div>
+                    <div class="card-body">
+                        @if (Model.takes != null && Model.takes.Any(t => t.students != null && t.students.users != null))
+                        {
+                            <table class="table table-striped table-hover">
+                                <thead class="table-light">
+                                    <tr>
+
+                                        <th class="text-center">نام دانشجو</th>
+                                        <th class="text-center">ایمیل</th>
+                                        <th class="text-center">نمره</th>
+                                        <th class="text-center">عملیات</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var take in Model.takes)
+                                    {
+                                        <tr>
+
+                                            <td class="text-center">@($"{take.students.users.First_Name} {take.students.users.Last_Name}")</td>
+                                            <td class="text-center">@take.students.users.Email</td>
+                                            <td class="text-center">@(take.grade == null? "نمره ثبت نشده است." : take.grade)</td>
+                                            <td class="text-center">
+                                                <form asp-action="DeleteStudentFromSection" method="post" style="display:inline;">
+                                                    <input type="hidden" name="studentId" value="@take.students.student_id" />
+                                                    <input type="hidden" name="sectionId" value="@Model.Id" />
+                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('آیا مطمئن هستید که می‌خواهید این دانشجو  را از کلاس حذف کنید؟');">
+                                                        حذف
+                                                    </button>
+                                                </form>
+                                                
+                                            </td>
+
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <p class="text-center text-muted">هیچ دانشجویی برای این کلاس ثبت نشده است.</p>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary">بازگشت</a>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+</style>

@@ -39,7 +39,7 @@ namespace Project.Controllers
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             var instructors = await _dbContext.instructors.Where(i => i.user_id == userId).ToListAsync();
             if (instructors.Count() < 2) return RedirectToAction("Index", "Instructor");
-            ViewBag.students = instructors.Select(x => new SelectListItem
+            ViewBag.instructors = instructors.Select(x => new SelectListItem
             {
                 Value = x.instructor_id.ToString(),
                 Text = "Instructor ID : " + x.instructor_id
