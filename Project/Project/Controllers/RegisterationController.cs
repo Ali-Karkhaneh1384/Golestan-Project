@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Project.Models;
 using System.Security.Claims;
 
 namespace Project.Controllers
@@ -38,7 +39,12 @@ namespace Project.Controllers
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             var instructors = await _dbContext.instructors.Where(i => i.user_id == userId).ToListAsync();
-            if (instructors.Count() < 2) return RedirectToAction("Index", "Instructor");
+            if (instructors.Count() < 2)
+            {
+                var selectedInstructor = instructors.FirstOrDefault();
+                HttpContext.Session.SetInt32("StudentId", selectedInstructor.instructor_id);
+                return RedirectToAction("Index", "Instructor");
+            }
             ViewBag.instructors = instructors.Select(x => new SelectListItem
             {
                 Value = x.instructor_id.ToString(),
@@ -58,7 +64,12 @@ namespace Project.Controllers
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             var students = await _dbContext.students.Where(i => i.user_id == userId).ToListAsync();
-            if (students.Count() < 2) return RedirectToAction("Index", "Student");
+            if (students.Count() < 2)
+            {
+                var selectedStudent = students.FirstOrDefault();
+                HttpContext.Session.SetInt32("StudentId", selectedStudent.student_id);
+                return RedirectToAction("Index", "Student");
+            }
             ViewBag.students = students.Select(x => new SelectListItem
             {
                 Value = x.student_id.ToString(),
