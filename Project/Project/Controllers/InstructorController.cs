@@ -1,6 +1,7 @@
 ﻿using Golestan_Project.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using Project.Models;
 using System.Threading.Tasks;
 
@@ -64,40 +65,32 @@ namespace Project.Controllers
             return View(section);
                 
         }
-        //[HttpPost]
-        //public async Task<IActionResult> SubmitGrade([Bind("student_id, section_id, grade")] takes model)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return RedirectToAction("ShowSectionDetails", new { sectionId = model.section_id, error = "داده‌های ورودی معتبر نیستند." });
-        //    }
-
-        //    var selectedTakes= _dbContext.takes
-        //        .FirstOrDefault(t => t.section_id == model.section_id && t.student_id == model.student_id);
-
-        //    if (selectedTakes == null)
-        //    {
-        //        return RedirectToAction("ShowSectionDetails", new { sectionId = model.section_id, error = "رابطه دانشجو با این بخش یافت نشد." });
-        //    }
-
-        //    if (model.grade >= 0 && model.grade <= 20)
-        //    {
-        //        selectedTakes.grade = model.grade;
-        //        try
-        //        {
-        //            await _dbContext.SaveChangesAsync();
-        //            return RedirectToAction("ShowSectionDetails", new { sectionId = model.section_id, success = "نمره با موفقیت ثبت شد." });
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            return RedirectToAction("ShowSectionDetails", new { sectionId = model.section_id, error = "خطا در ثبت نمره: " + ex.Message });
-        //        }
-        //    }
-        //    else
-        //    {
-        //        return RedirectToAction("ShowSectionDetails", new { sectionId = model.section_id, error = "نمره باید بین 0 تا 20 باشد." });
-        //    }
-        //}
-
+        [HttpPost]
+        public async Task<IActionResult> SubmitGrade(int NewGrade, int stdId, int secId)
+        {
+            var changedTake = await _dbContext.takes.FirstOrDefaultAsync(x => x.student_id == stdId && x.section_id == secId);
+            if (changedTake == null)
+            {
+                ViewBag.error = "اطلاعات دانشجو یا کلاس یافت نشد.";
+                return RedirectToAction("ShowSectionDetails", new { sectionId = secId });
+            }
+            changedTake.grade = NewGrade;
+            await _dbContext.SaveChangesAsync();
+            ViewBag.success = "نمره با موفقیت ثبت شد.";
+            return RedirectToAction("ShowSectionDetails", new { sectionId = secId });
+        }
+        [HttpPost]
+        public async Task<IActionResult> ResetGrade(int stdId, int secId)
+        {
+            var changedTake = await _dbContext.takes.FirstOrDefaultAsync(x => x.student_id == stdId && x.section_id == secId);
+            if (changedTake == null)
+            {
+                ViewBag.error = "اطلاعات دانشجو یا کلاس یافت نشد.";
+                return RedirectToAction("ShowSectionDetails", new { sectionId = secId });
+            }
+            changedTake.grade = null;
+            await _dbContext.SaveChangesAsync();
+            return RedirectToAction("ShowSectionDetails", new { sectionId = secId });
+        }
     }
 }

@@ -19,7 +19,6 @@
             }
             else
             {
-                <!-- نمایش پیام موفقیت یا ارور -->
                 @if (!string.IsNullOrEmpty(successMessage))
                 {
                     <div class="alert alert-success text-center">@successMessage</div>
@@ -75,7 +74,28 @@
                                         <tr>
                                             <td class="text-center">@($"{take.students.users.First_Name} {take.students.users.Last_Name}")</td>
                                             <td class="text-center">@take.students.users.Email</td>
-                                            <td class="text-center">@(take.grade == null ? "نمره ثبت نشده است." : take.grade)</td>
+                                            @if(take.grade == null)
+                                            {
+                                                <td class="text-center align-middle">
+                                                    <form id="gradeForm-@take.students.student_id" asp-action="SubmitGrade" method="post" dir="rtl" style="margin: 0;">
+                                                        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                                                            <input data-val="true" data-val-required="وارد کردن نمره الزامی است"
+                                                                   name="NewGrade" class="form-control"
+                                                                   type="number" min="0" max="20" required
+                                                                   style="width: 70px; height: 32px; text-align:center;" />
+                                                            <input hidden="true" name="stdId" value="@take.student_id" />
+                                                            <input hidden="true" name="secId" value="@take.section_id" />
+                                                        </div>
+                                                    </form>
+                                                </td>
+
+                                            }
+                                            else
+                                            {
+                                                <td class="text-center">
+                                                    @take.grade
+                                                </td>
+                                            }
                                             <td class="text-center">
                                                 <form asp-action="DeleteStudentFromSection" method="post" style="display:inline;">
                                                     <input type="hidden" name="studentId" value="@take.students.student_id" />
@@ -85,36 +105,23 @@
                                                     </button>
                                                 </form>
                                                 
-                                                @* <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#gradeModal-@take.students.student_id"> *@
-                                                @*     ثبت نمره *@
-                                                @* </button> *@
+                                                @if(take.grade == null)
+                                                {
+                                                    <button type="submit" form="gradeForm-@take.students.student_id" class="btn btn-success btn-sm">
+                                                        ثبت نمره
+                                                    </button>
+                                                }
+                                                else
+                                                {
+                                                    <form asp-action="ResetGrade" method="post" style="display:inline;">
+                                                        <input type="hidden" name="stdId" value="@take.student_id" />
+                                                        <input type="hidden" name="secId" value="@take.section_id" />
+                                                        <button type="submit" class="btn btn-warning btn-sm">
+                                                            تغییر نمره
+                                                        </button>
+                                                    </form>
 
-                                                
-                                                @* <div class="modal fade" id="gradeModal-@take.students.student_id" tabindex="-1" aria-labelledby="gradeModalLabel-@take.students.student_id" aria-hidden="true"> *@
-                                                @*     <div class="modal-dialog modal-dialog-centered"> *@
-                                                @*         <div class="modal-content"> *@
-                                                @*             <div class="modal-header"> *@
-                                                @*                 <h5 class="modal-title" id="gradeModalLabel-@take.students.student_id">ثبت نمره برای @(take.students.users.First_Name + " " + take.students.users.Last_Name)</h5> *@
-                                                @*                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> *@
-                                                @*             </div> *@
-                                                @*             <div class="modal-body"> *@
-                                                @*                 <form asp-action="SubmitGrade" method="post"> *@
-                                                @*                     <input type="hidden" name="student_id" value="@take.students.student_id" /> *@
-                                                @*                     <input type="hidden" name="section_id" value="@Model.Id" /> *@
-                                                @*                     <div class="form-group row align-items-center"> *@
-                                                @*                         <span class="text-danger col-auto me-2"></span> *@
-                                                @*                         <input Name="grade" class="form-control" type="number" min="1" max="12" required /> *@
-                                                @*                         <label class="form-label fw-bold text-secondary col-auto ms-2">نمره</label> *@
-                                                @*                     </div> *@
-                                                @*                     <button type="submit" class="btn btn-primary mt-3">ثبت</button> *@
-                                                @*                 </form> *@
-                                                @*             </div> *@
-                                                @*             <div class="modal-footer"> *@
-                                                @*                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button> *@
-                                                @*             </div> *@
-                                                @*         </div> *@
-                                                @*     </div> *@
-                                                @* </div> *@
+                                                }
                                             </td>
                                         </tr>
                                     }
