@@ -92,5 +92,23 @@ namespace Project.Controllers
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("ShowSectionDetails", new { sectionId = secId });
         }
+        [HttpPost]
+        public async Task<IActionResult> DeleteStudentFromSection(int studentId , int sectionId)
+        {
+            var student =  _dbContext.students.Include(s => s.takes).FirstOrDefault(s => s.student_id == studentId);
+            if (student == null)
+            {
+                return NotFound("دانش‌آموز یافت نشد.");
+            }
+
+            var deletedTake = _dbContext.takes.FirstOrDefault(t => t.section_id == sectionId);
+            if (deletedTake != null)
+            {
+                _dbContext.takes.Remove(deletedTake);
+                await _dbContext.SaveChangesAsync();
+            }
+
+            return RedirectToAction("ShowSectionDetails", new { sectionId = sectionId });
+        }
     }
 }

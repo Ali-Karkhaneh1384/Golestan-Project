@@ -7,7 +7,7 @@
 
 <div class="container mt-5">
     <div class="card shadow-sm border-0">
-        <div class="card-header bg-primary text-white text-center">
+        <div class="card-header text-white text-center" style="background-color:#00205b">
             <h2 class="mb-0" style="direction:rtl">جزئیات کلاس درس: @Model.course.Title</h2>
         </div>
         <div class="card-body p-4">
@@ -19,7 +19,7 @@
             {
                 <div class="row mb-4">
                     <div class="col-md-6 text-end">
-                        <h4 class="text-primary">زمان کلاس ها</h4>
+                        <h4 style="color:#003087">زمان کلاس ها</h4>
                         @if (Model.section_Times != null && Model.section_Times.Any())
                         {
                             @foreach (var time in Model.section_Times)
@@ -33,7 +33,7 @@
                         }
                     </div>
                     <div class="col-md-6 text-end">
-                        <h4 class="text-primary">اطلاعات کلی</h4>
+                        <h4 style="color:#003087">اطلاعات کلی</h4>
                         <p><strong>سال:</strong> @Model.year</p>
                         <p><strong>نیمسال:</strong> @Model.semester</p>
                         <p style="direction:rtl"><strong>کلاس: </strong>(@Model.classroom.building) @Model.classroom.room_number</p>
@@ -44,7 +44,7 @@
 
               
                 <div class="card mb-4" dir="rtl">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header  text-white" style="background-color:#00205b">
                         <h4 class="mb-0 text-center ">استاد</h4>
                     </div>
                     <div class="card-body">
@@ -93,7 +93,7 @@
 
 
                 <div class="card" dir="rtl">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header  text-white" style="background-color:#00205b">
                         <h4 class="mb-0 text-center">دانشجویان</h4>
                     </div>
                     <div class="card-body">
@@ -157,4 +157,17 @@
     .table th, .table td {
         vertical-align: middle; 
     }
+
+    .btn-primary {
+        background-color: #003087;
+        border: none;
+        border-radius: 5px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #00205b;
+        }
 </style>
