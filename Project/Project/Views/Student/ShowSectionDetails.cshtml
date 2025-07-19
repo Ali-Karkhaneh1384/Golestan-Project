@@ -1,0 +1,81 @@
+﻿@model sections
+
+@{
+    ViewData["Title"] = "جزئیات کلاس درس";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header text-white text-center" style="background-color:#00205b">
+            <h2 class="mb-0" style="direction:rtl">جزئیات کلاس درس: @Model?.course?.Title</h2>
+        </div>
+        <div class="card-body p-4">
+            @if (Model == null)
+            {
+                <div class="alert alert-warning text-center">اطلاعاتی برای این کلاس درس یافت نشد.</div>
+            }
+            else
+            {
+                <div class="row mb-4">
+                    <div class="col-md-6 text-end">
+                        <h4 style="color:#003087">زمان کلاس ها</h4>
+                        @if (Model.section_Times != null && Model.section_Times.Any())
+                        {
+                            @foreach (var time in Model.section_Times)
+                            {
+                                <p><strong>@time?.time_slot?.day :</strong> @time?.time_slot?.start_time.ToString("HH:mm") - @time?.time_slot?.end_time.ToString("HH:mm")</p>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-center text-muted">هیچ زمان‌بندی برای این کلاس ثبت نشده است.</p>
+                        }
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <h4 style="color:#003087">اطلاعات کلی</h4>
+                        <p><strong>سال:</strong> @Model?.year</p>
+                        <p><strong>نیمسال:</strong> @Model?.semester</p>
+                        <p style="direction:rtl">
+                            <strong>استاد: </strong>
+                            @(
+                                Model?.teach?.instructor?.user != null
+                                    ? $"{Model.teach.instructor.user.First_Name} {Model.teach.instructor.user.Last_Name}"
+                                    : "نامشخص"
+                            )
+                        </p>
+                        <p style="direction:rtl">
+                            <strong>کلاس: </strong>
+                            @(
+                                Model?.classroom != null
+                                    ? $"({Model.classroom.building}) {Model.classroom.room_number}"
+                                    : "نامشخص"
+                            )
+                        </p>
+                        <p><strong>تاریخ امتحان:</strong> @(Model?.final_exam_date != null ? Model.final_exam_date.ToString("yyyy/MM/dd") : "نامشخص")</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary">بازگشت</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .card {
+        border-radius: 10px;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .modal-content {
+        border-radius: 10px;
+    }
+</style>
