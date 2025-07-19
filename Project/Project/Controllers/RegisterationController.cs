@@ -42,7 +42,7 @@ namespace Project.Controllers
             if (instructors.Count() < 2)
             {
                 var selectedInstructor = instructors.FirstOrDefault();
-                HttpContext.Session.SetInt32("StudentId", selectedInstructor.instructor_id);
+                HttpContext.Session.SetInt32("InstructorId", selectedInstructor.instructor_id);
                 return RedirectToAction("Index", "Instructor");
             }
             ViewBag.instructors = instructors.Select(x => new SelectListItem

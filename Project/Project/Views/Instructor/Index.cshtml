@@ -7,7 +7,18 @@
 
 <div class="full-page-dashboard" dir="rtl">
     <h2 class=" fw-bold mb-4 text-end" style="color:#003087">داشبورد استاد</h2>
-
+    <div class="card mb-4" dir="rtl">
+        <div class="card-header text-white" style="background-color:#00205b">
+            <h4 class="mb-0 text-center ">اطلاعات استاد</h4>
+        </div>
+        <div class="card-body">
+            <div class="col-md-6 text-end">
+                <p><strong>نام:</strong> @Model.user.First_Name</p>
+                <p><strong>نام خانوادگی:</strong> @Model.user.Last_Name</p>
+                <p><strong>ایمیل:</strong> @Model.user.Email</p>
+            </div>
+        </div>
+    </div>
     @if (Model == null || Model.teaches == null || !Model.teaches.Any())
     {
         <div class="alert alert-warning text-center" role="alert">
