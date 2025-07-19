@@ -188,7 +188,7 @@ namespace Project.Controllers
                     _dbContext.section_Times.Add(new section_time() { time_slot_id = x, section_id = section.Id });
                 }
                 await _dbContext.SaveChangesAsync();
-                return RedirectToAction("CreateTeach", section);
+                return RedirectToAction("Success", section);
             }
             return RedirectToAction("Failure");
         }

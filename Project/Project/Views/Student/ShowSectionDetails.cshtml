@@ -3,14 +3,13 @@
 @{
     ViewData["Title"] = "جزئیات کلاس درس";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var successMessage = ViewBag.success as string;
-    var errorMessage = ViewBag.error as string;
+   
 }
 
 <div class="container mt-5">
     <div class="card shadow-sm border-0">
         <div class="card-header text-white text-center" style="background-color:#00205b">
-            <h2 class="mb-0" style="direction:rtl">جزئیات کلاس درس: @Model.course.Title</h2>
+            <h2 class="mb-0" style="direction:rtl">جزئیات کلاس درس: @Model?.course?.Title</h2>
         </div>
         <div class="card-body p-4">
             @if (Model == null)
@@ -19,15 +18,6 @@
             }
             else
             {
-                @if (!string.IsNullOrEmpty(successMessage))
-                {
-                    <div class="alert alert-success text-center">@successMessage</div>
-                }
-                @if (!string.IsNullOrEmpty(errorMessage))
-                {
-                    <div class="alert alert-danger text-center">@errorMessage</div>
-                }
-
                 <div class="row mb-4">
                     <div class="col-md-6 text-end">
                         <h4 style="color:#003087">زمان کلاس ها</h4>
@@ -35,7 +25,7 @@
                         {
                             @foreach (var time in Model.section_Times)
                             {
-                                <p><strong>@time.time_slot.day :</strong> @time.time_slot.start_time.ToString("HH:mm") - @time.time_slot.end_time.ToString("HH:mm")</p>
+                                <p><strong>@time?.time_slot?.day :</strong> @time?.time_slot?.start_time.ToString("HH:mm") - @time?.time_slot?.end_time.ToString("HH:mm")</p>
                             }
                         }
                         else
@@ -45,16 +35,27 @@
                     </div>
                     <div class="col-md-6 text-end">
                         <h4 style="color:#003087">اطلاعات کلی</h4>
-                        <p><strong>سال:</strong> @Model.year</p>
-                        <p><strong>نیمسال:</strong> @Model.semester</p>
-                        <p style="direction:rtl"><strong>استاد: </strong>@($"{Model.teach.instructor.user.First_Name} {Model.teach.instructor.user.Last_Name}")</p>
-                        <p style="direction:rtl"><strong>کلاس: </strong>(@Model.classroom.building) @Model.classroom.room_number</p>
-                        <p><strong>تاریخ امتحان:</strong> @Model.final_exam_date.ToString("yyyy/MM/dd")</p>
+                        <p><strong>سال:</strong> @Model?.year</p>
+                        <p><strong>نیمسال:</strong> @Model?.semester</p>
+                        <p style="direction:rtl">
+                            <strong>استاد: </strong>
+                            @(
+                                Model?.teach?.instructor?.user != null
+                                    ? $"{Model.teach.instructor.user.First_Name} {Model.teach.instructor.user.Last_Name}"
+                                    : "نامشخص"
+                            )
+                        </p>
+                        <p style="direction:rtl">
+                            <strong>کلاس: </strong>
+                            @(
+                                Model?.classroom != null
+                                    ? $"({Model.classroom.building}) {Model.classroom.room_number}"
+                                    : "نامشخص"
+                            )
+                        </p>
+                        <p><strong>تاریخ امتحان:</strong> @(Model?.final_exam_date != null ? Model.final_exam_date.ToString("yyyy/MM/dd") : "نامشخص")</p>
                     </div>
                 </div>
-
-                
-              
             }
         </div>
     </div>
