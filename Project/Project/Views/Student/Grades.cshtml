@@ -1,0 +1,69 @@
+﻿@model students
+
+@{
+    ViewData["Title"] = "نمرات دانشجو";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 class=" fw-bold mb-4 text-end" style="color:#003087">نمرات دانشجو</h2>
+@if (Model == null || Model.takes == null || !Model.takes.Any())
+{
+    <div class="alert alert-warning mt-3 text-end" role="alert">
+      . هیچ کلاسی به شما اختصاص داده نشده است
+    </div>
+}
+else
+{
+    <div class="card mt-4">
+        <div class="card-header text-white" style="background-color:#00205b">
+            <h3 class="mb-0 text-center">نمرات </h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover" style="direction:ltr">
+                <thead class="table-light">
+                    <tr dir="ltr">
+
+
+                        <th class="text-center">نمره</th>
+                        <th class="text-center">نام استاد</th>
+                        <th class="text-center">نیمسال</th>
+                        <th class="text-center">سال</th>
+
+                        <th class="text-center">دوره</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model?.takes != null)
+                    {
+                        foreach (var take in Model.takes)
+                        {
+                            <tr>
+                                <td class="text-center">
+                                    @(take?.sections != null && take.grade != null ? take.grade : "نمره ثبت نشده است")
+                                </td>
+                                <td class="text-center">
+                                    @(
+                                take?.sections != null && take.sections.teach != null && take.sections.teach.instructor != null && take.sections.teach.instructor.user != null
+                                        ? take.sections.teach.instructor.user.First_Name + " " + take.sections.teach.instructor.user.Last_Name
+                                        : "نامشخص"
+                                )
+                                </td>
+                                <td class="text-center">@(take?.sections != null ? take.sections.semester : "نامشخص")</td>
+                                <td class="text-center">@(take?.sections != null ? take.sections.year : "نامشخص")</td>
+                                <td class="text-center">
+                                    @(take?.sections != null && take.sections.course != null ? take.sections.course.Title : "نامشخص")
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td class="text-center" colspan="5">داده‌ای برای نمایش وجود ندارد.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+}
