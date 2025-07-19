@@ -13,7 +13,7 @@ namespace Project.Models
         [Required(ErrorMessage = "کلاس درس باید انتخاب شود")]
         public int section_id { get; set; }
         
-        public int grade {  get; set; }
+        public int? grade {  get; set; }
         [ForeignKey("student_id")]
         public students students { get; set; }
         [ForeignKey("section_id")]

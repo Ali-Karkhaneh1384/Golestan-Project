@@ -161,7 +161,7 @@ namespace Project.Controllers
                 }
                 foreach(var i in sameClassTimesId)
                     foreach(var j in section.TimeSlotIds)
-                        if(j == j)
+                        if(i == j)
                         {
                             ModelState.AddModelError("", "این کلاس در این زمان اشغال است");
                             ViewBag.CourseList = _dbContext.courses.Select(x => new SelectListItem
@@ -188,7 +188,7 @@ namespace Project.Controllers
                     _dbContext.section_Times.Add(new section_time() { time_slot_id = x, section_id = section.Id });
                 }
                 await _dbContext.SaveChangesAsync();
-                return RedirectToAction("CreateTeach", section);
+                return RedirectToAction("Success");
             }
             return RedirectToAction("Failure");
         }
@@ -305,7 +305,7 @@ namespace Project.Controllers
 
             if (ModelState.IsValid)
             {
-               
+                model.grade = null;
                 if (await _dbContext.takes.AnyAsync(t => t.student_id == model.student_id && t.section_id == model.section_id))
                 {
                     ModelState.AddModelError("", "این دانشجو قبلاً در این بخش ثبت‌نام کرده است.");

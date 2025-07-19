@@ -5,7 +5,7 @@
 }
 
 <div class="container mt-4 text-end" dir="rtl">
-    <h2 class="text-primary fw-bold">جزئیات استاد: @((Model != null && Model.user != null ? Model.user.First_Name + " " + Model.user.Last_Name : "نامشخص"))</h2>
+    <h2 class=" fw-bold" style="color: #003087;">جزئیات استاد: @((Model != null && Model.user != null ? Model.user.First_Name + " " + Model.user.Last_Name : "نامشخص"))</h2>
 
     @if (Model == null || Model.teaches == null || !Model.teaches.Any())
     {
@@ -16,7 +16,7 @@
     else
     {
         <div class="card mt-4">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header text-white" style="background-color:#00205b">
                 <h3 class="mb-0 text-center">اطلاعات کلاس ها</h3>
             </div>
             <div class="card-body" style="direction: ltr; text-align: right">
@@ -63,4 +63,18 @@
 <div style="text-align:center; direction:rtl; margin-right: 20px">
     <a asp-action="Index" class="btn btn-secondary mt-3" style="text-align:right; direction:rtl">بازگشت</a>
 </div>
+<style>
+    .btn-primary {
+        background-color: #003087;
+        border: none;
+        border-radius: 5px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #00205b;
+        }
+</style>
 
