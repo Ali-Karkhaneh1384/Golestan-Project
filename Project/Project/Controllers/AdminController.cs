@@ -1,4 +1,5 @@
 ﻿using Golestan_Project.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +9,7 @@ using Project.Models;
 
 namespace Project.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
 
     {
@@ -340,6 +342,17 @@ namespace Project.Controllers
                                 if(j.time_slot_id == i.time_slot_id)
                                 {
                                     ModelState.AddModelError("", "دانشجو در این زمان کلاس دیگری دارد");
+                                    ViewBag.students = _dbContext.students.Select(s => new SelectListItem
+                                    {
+                                        Value = s.student_id.ToString(),
+                                        Text = $"{s.users.First_Name} {s.users.Last_Name} ({s.users.Email})"
+                                    }).ToList();
+
+                                    ViewBag.sections = _dbContext.sections.Select(s => new SelectListItem
+                                    {
+                                        Value = s.Id.ToString(),
+                                        Text = $"{s.course.Title} -  نیمسال {s.semester}"
+                                    }).ToList();
                                     return View(model);
                                 }
                         }
