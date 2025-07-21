@@ -155,6 +155,26 @@ namespace Project.Controllers
             section.final_exam_date = new DateTime(finalYear, finalMonth, finalDay);
             if(ModelState.IsValid)
             {
+                if((section.semester == 1 && finalYear != section.year)||(section.semester == 2 && finalYear != section.year + 1))
+                {
+                    ModelState.AddModelError("", "سال امتحان نهایی نامعتبر است.");
+                    ViewBag.CourseList = _dbContext.courses.Select(x => new SelectListItem
+                    {
+                        Value = x.Id.ToString(),
+                        Text = $"{x.Title} ({x.code})"
+                    });
+                    ViewBag.ClassroomList = _dbContext.classrooms.Select(x => new SelectListItem
+                    {
+                        Value = x.Id.ToString(),
+                        Text = $"{x.building} - class: {x.room_number} ({x.capacity})"
+                    });
+                    ViewBag.TimeSlotList = _dbContext.timeslots.Select(x => new SelectListItem
+                    {
+                        Value = x.Id.ToString(),
+                        Text = $"{x.day} ({x.start_time.ToString(@"hh\:mm")} - {x.end_time.ToString(@"hh\:mm")})"
+                    });
+                    return View();
+                }
                 var sectionsSameClass = await _dbContext.sections.Include(x => x.section_Times).Where(x => x.classroom_id == section.classroom_id).ToListAsync();
                 var sameClassTimesId = new List<int>();
                 foreach(var sec in sectionsSameClass)
