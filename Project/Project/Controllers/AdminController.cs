@@ -296,6 +296,31 @@ namespace Project.Controllers
                             });
                             return View(model);
                         }
+                var ins = await _dbContext.instructors.FirstOrDefaultAsync(x => x.instructor_id == model.instructor_id);
+                var modelSection = await _dbContext.sections.Include(x => x.takes).FirstOrDefaultAsync(x => x.Id ==  model.section_id);
+                if(modelSection.takes != null)
+                {
+                    foreach (var take in modelSection.takes)
+                    {
+                        var std = await _dbContext.students.FirstOrDefaultAsync(x => x.student_id  == take.student_id);
+                        if(ins.user_id == std.user_id)
+                        {
+                            ModelState.AddModelError("", "کاربر در کلاس نمیتواند همزمان دانشجو و استاد باشد.");
+                            ViewBag.students = _dbContext.students.Select(s => new SelectListItem
+                            {
+                                Value = s.student_id.ToString(),
+                                Text = $"{s.users.First_Name} {s.users.Last_Name} ({s.users.Email})"
+                            }).ToList();
+
+                            ViewBag.sections = _dbContext.sections.Select(s => new SelectListItem
+                            {
+                                Value = s.Id.ToString(),
+                                Text = $"{s.course.Title} -  نیمسال {s.semester}"
+                            }).ToList();
+                            return View(model);
+                        }
+                    }
+                }
                 _dbContext.teaches.Add(model);
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
@@ -344,8 +369,9 @@ namespace Project.Controllers
                     }).ToList();
                     return View(model);
                 }
+                model.grade = null;
                 var SectionStudentNum = await _dbContext.takes.Where(x => x.section_id == model.section_id).CountAsync();
-                var ModelSection = await _dbContext.sections.FirstOrDefaultAsync(x => x.Id == model.section_id);
+                var ModelSection = await _dbContext.sections.Include(x => x.teach).FirstOrDefaultAsync(x => x.Id == model.section_id);
                 var modelTimeSlots = await _dbContext.section_Times.Where(x => x.section_id == ModelSection.Id).ToListAsync();
                 var SectionClassroom = await _dbContext.classrooms.FirstOrDefaultAsync(x => x.Id == ModelSection.classroom_id);
                 var ClassroomCapacity = SectionClassroom.capacity;
@@ -375,6 +401,27 @@ namespace Project.Controllers
                                     }).ToList();
                                     return View(model);
                                 }
+                        }
+                    }
+                    if(ModelSection.teach != null)
+                    {
+                        var inst = await _dbContext.instructors.FirstOrDefaultAsync(x => x.instructor_id == ModelSection.teach.instructor_id);
+                        var std = await _dbContext.students.FirstOrDefaultAsync(x => x.student_id == model.student_id);
+                        if (inst.user_id == std.user_id)
+                        {
+                            ModelState.AddModelError("", "کاربر در کلاس نمیتواند همزمان دانشجو و استاد باشد.");
+                            ViewBag.students = _dbContext.students.Select(s => new SelectListItem
+                            {
+                                Value = s.student_id.ToString(),
+                                Text = $"{s.users.First_Name} {s.users.Last_Name} ({s.users.Email})"
+                            }).ToList();
+
+                            ViewBag.sections = _dbContext.sections.Select(s => new SelectListItem
+                            {
+                                Value = s.Id.ToString(),
+                                Text = $"{s.course.Title} -  نیمسال {s.semester}"
+                            }).ToList();
+                            return View(model);
                         }
                     }
                     _dbContext.takes.Add(model);
