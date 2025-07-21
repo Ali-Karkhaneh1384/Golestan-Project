@@ -107,12 +107,23 @@ namespace Project.Controllers
         {
             if(ModelState.IsValid)
             {
+                if (_dbContext.users.Any()) {
+                    foreach (var user in _dbContext.users)
+                    {
+                        if (user.Email == model.Email)
+                        {
+                            ModelState.AddModelError("","این ایمیل قبلا توسط کاربر دیگری استفاده شده است.");
+                            return View();
+                        }
+                }
+                }
                 model.Hashed_Password = BCrypt.Net.BCrypt.HashPassword(model.Hashed_Password);
                 model.Created_at = DateTime.Now;
                 _dbContext.users.Add(model);
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Success");
             }
+            
             return RedirectToAction("Failure");
         }
         public IActionResult CreateCourse()
