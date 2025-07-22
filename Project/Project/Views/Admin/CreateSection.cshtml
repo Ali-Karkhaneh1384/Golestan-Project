@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label asp-for="year">سال تحصیلی</label>
-                    <input asp-for="year" class="form-control" type="number" min="1350" max="1404" />
+                    <input asp-for="year" data-val="true" data-val-range="سال تحصیلی باید بین 1350 تا 1404 باشد" data-val-range-min="1350" data-val-range-max="1404" class="form-control" type="number"  />
                     <span  class="text-danger"></span>
                 </div>
             </div>
@@ -55,18 +55,21 @@
             <div class="form-row" style="display: flex; gap: 15px">
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>روز آزمون</label>
-                    <input  data-val="true" data-val-required="وارد کردن روز آزمون الزامی است" Name="finalDay" class="form-control" type="number" min="1" max="31" required />
+                    <input data-val="true" data-val-required="وارد کردن روز آزمون الزامی است" data-val-range="روز آزمون باید بین 1 تا 31 باشد."
+                              data-val-range-min="1" data-val-range-max="31" Name="finalDay" class="form-control" type="number" required />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>ماه آزمون</label>
-                    <input  data-val="true" data-val-required="وارد کردن ماه آزمون الزامی است" Name="finalMonth" class="form-control" type="number" min="1" max="12" required />
+                    <input data-val="true" data-val-required="وارد کردن ماه آزمون الزامی است" data-val-range="ماه آزمون باید بین 1 تا 12 باشد."
+                              data-val-range-min="1" data-val-range-max="12" Name="finalMonth" class="form-control" type="number" required />
                 </div>
                 <div class="form-group" style="flex: 1; direction: rtl; text-align: right;">
                     <label>سال آزمون</label>
-                    <input  data-val="true" data-val-required="وارد کردن سال آزمون الزامی است" Name="finalYear" class="form-control" type="number" min="1350" max="1405" required />
+                    <input data-val="true" data-val-required="وارد کردن سال آزمون الزامی است" data-val-range="سال آزمون باید بین 1350 تا 1405 باشد"
+                              data-val-range-min="1350" data-val-range-max="1405" Name="finalYear" class="form-control" type="number" required />
                 </div>
             </div>
-
+            
             <button type="submit" class="btn btn-primary mt-4">تایید</button>
             <div style="direction: rtl; text-align: right; margin-top: 20px">
                 <a href="https://localhost:7256/Admin/Index">بازگشت</a>

@@ -27,7 +27,7 @@
 
             <div class="form-group" style="direction: rtl; text-align: right;">
                 <label asp-for="unit" >واحد</label>
-                <input asp-for="unit" class="form-control" type="number" min="0" max="4" placeholder="تعداد واحد را به عدد وارد کنید" />
+                <input asp-for="unit" data-val="true" data-val-range="واحد باید بین 0 تا 4 باشد." data-val-range-min="0" data-val-range-max="4" class="form-control" type="number" placeholder="تعداد واحد را به عدد وارد کنید" />
                 <span  class="text-danger"></span>
             </div>
 
