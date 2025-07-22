@@ -8,7 +8,7 @@ namespace Project.Models
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "روز نمیتواند خالی باشد")]
-        [Column(TypeName ="varchar(225)")]
+        [Column(TypeName ="nvarchar(225)")]
         public string day { get; set; }
         [Required(ErrorMessage = "زمان شروع نمیتواند خالی باشد")]
         public DateTime start_time { get; set; }

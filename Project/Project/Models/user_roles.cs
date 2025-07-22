@@ -8,10 +8,6 @@ namespace Project.Models
     [PrimaryKey(nameof(UserId), nameof(RoleId))]
     public class user_roles
     {
-        //public int user_id { get; set; }
-        //public int role_id { get; set; }
-
-        
         public int UserId { get; set; }
         
         public int RoleId { get; set; }

@@ -10,13 +10,13 @@ namespace Project.Models
         public int Id { get; set; }
         public DateTime Created_at {  get; set; }
         [Required(ErrorMessage ="وارد کردن نام الزامی است")]
-        [Column(TypeName = "varchar (50)")]
+        [Column(TypeName = "nvarchar (50)")]
         public string First_Name { get; set; }
         [Required(ErrorMessage = "وارد کردن نام خانوادگی الزامی است")]
-        [Column(TypeName = "varchar (50)")]
+        [Column(TypeName = "nvarchar (50)")]
         public string Last_Name { get; set; }
         [Required(ErrorMessage = "وارد کردن ایمیل دانشجو الزامی است")]
-        [Column(TypeName = "varchar (50)")]
+        [Column(TypeName = "nvarchar (50)")]
         public string Email {  get; set; }
         [Required(ErrorMessage = "وارد کردن گذرواژه الزامی است")]
         [DataType(DataType.Password)]
